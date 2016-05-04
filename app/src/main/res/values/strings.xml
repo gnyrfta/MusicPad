@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MusicPads</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="choose_Instruments">Choose an instrument for each pad. </string>
+    <string-array name="sounds_array">
+        <item>Piano C</item>
+        <item>Piano D</item>
+        <item>Piano F</item>
+        <item>Piano G</item>
+    	<item>Clap</item>
+       	<item>Cowbell</item>
+        <item>Hihat Closed</item>
+        <item>Hihat Open</item>
+        <item>Kick Drum</item>
+        <item>Snare Drum</item>
+        <item>Stick Drum</item>
+                                
+        
+    </string-array>
+</resources>
