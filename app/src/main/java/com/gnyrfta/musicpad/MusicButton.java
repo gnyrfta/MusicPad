@@ -8,9 +8,9 @@ import android.view.MotionEvent;
 import android.widget.ImageButton;
 
 
-public class TestButton extends ImageButton {
+public class MusicButton extends ImageButton {
 	private int soundToPlay;
-	public TestButton(final Context context, final AttributeSet attrs) {
+	public MusicButton(final Context context, final AttributeSet attrs) {
 		super(context, attrs);
 
 		// TODO Auto-generated constructor stub

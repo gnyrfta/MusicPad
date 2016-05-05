@@ -92,47 +92,47 @@ public class Pad extends MultiTouchActivity {
 
 
 		
-		final TestButton buttonOne = (TestButton) findViewById(R.id.padOne);
+		final MusicButton buttonOne = (MusicButton) findViewById(R.id.padOne);
 		buttonOne.setSoundId(soundIdOne);
 
-        final TestButton buttonTwo = (TestButton) findViewById(R.id.padTwo);
+        final MusicButton buttonTwo = (MusicButton) findViewById(R.id.padTwo);
 		buttonTwo.setSoundId(soundIdTwo);
 
-		final TestButton buttonThree =(TestButton) findViewById(R.id.padThree);
+		final MusicButton buttonThree =(MusicButton) findViewById(R.id.padThree);
 		buttonThree.setSoundId(soundIdThree);
 
-		final TestButton buttonFour = (TestButton) findViewById(R.id.padFour);
+		final MusicButton buttonFour = (MusicButton) findViewById(R.id.padFour);
 		buttonFour.setSoundId(soundIdFour);
 
-		final TestButton buttonFive = (TestButton) findViewById(R.id.padFive);
+		final MusicButton buttonFive = (MusicButton) findViewById(R.id.padFive);
 		buttonFive.setSoundId(soundIdFive);
 
-		final TestButton buttonSix = (TestButton) findViewById(R.id.padSix);
+		final MusicButton buttonSix = (MusicButton) findViewById(R.id.padSix);
 		buttonSix.setSoundId(soundIdSix);
 
-		final TestButton buttonSeven = (TestButton) findViewById(R.id.padSeven);
+		final MusicButton buttonSeven = (MusicButton) findViewById(R.id.padSeven);
 		buttonSeven.setSoundId(soundIdSeven);
 
-		final TestButton buttonEight = (TestButton) findViewById(R.id.padEight);
+		final MusicButton buttonEight = (MusicButton) findViewById(R.id.padEight);
 		buttonEight.setSoundId(soundIdEight);
 
-		final TestButton buttonNine = (TestButton) findViewById(R.id.padNine);
+		final MusicButton buttonNine = (MusicButton) findViewById(R.id.padNine);
 		buttonNine.setSoundId(soundIdNine);
 
-		final TestButton buttonTen = (TestButton) findViewById(R.id.padTen);
+		final MusicButton buttonTen = (MusicButton) findViewById(R.id.padTen);
 		buttonTen.setSoundId(soundIdTen);
 
-		final TestButton buttonEleven = (TestButton) findViewById(R.id.padEleven);
+		final MusicButton buttonEleven = (MusicButton) findViewById(R.id.padEleven);
 		buttonEleven.setSoundId(soundIdEleven);
-		final TestButton buttonTwelve = (TestButton) findViewById(R.id.padTwelve);
+		final MusicButton buttonTwelve = (MusicButton) findViewById(R.id.padTwelve);
 		buttonTwelve.setSoundId(soundIdTwelve);
-		final TestButton buttonThirteen = (TestButton) findViewById(R.id.padThirteen);
+		final MusicButton buttonThirteen = (MusicButton) findViewById(R.id.padThirteen);
 		buttonThirteen.setSoundId(soundIdThirteen);
-		final TestButton buttonFourteen = (TestButton) findViewById(R.id.padFourteen);
+		final MusicButton buttonFourteen = (MusicButton) findViewById(R.id.padFourteen);
 		buttonFourteen.setSoundId(soundIdFourteen);
-		final TestButton buttonFifteen = (TestButton) findViewById(R.id.padFifteen);
+		final MusicButton buttonFifteen = (MusicButton) findViewById(R.id.padFifteen);
 		buttonFifteen.setSoundId(soundIdFifteen);
-		final TestButton buttonSixteen = (TestButton) findViewById(R.id.padSixteen);
+		final MusicButton buttonSixteen = (MusicButton) findViewById(R.id.padSixteen);
 		buttonSixteen.setSoundId(soundIdSixteen);
 
 		int buttonSize = (int)(width/4);
