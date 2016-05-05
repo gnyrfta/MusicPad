@@ -18,6 +18,17 @@ public class Pad extends MultiTouchActivity {
 	public static int soundIdFour=0;
 	public static int soundIdFive=0;
 	public static int soundIdSix=0;
+	public static int soundIdSeven=0;
+	public static int soundIdEight=0;
+	public static int soundIdNine=0;
+	public static int soundIdTen=0;
+	public static int soundIdEleven=0;
+	public static int soundIdTwelve=0;
+	public static int soundIdThirteen=0;
+	public static int soundIdFourteen=0;
+	public static int soundIdFifteen=0;
+	public static int soundIdSixteen=0;
+
 	int soundIdTest=0; 	
 	int soundIdTest2=0;
 	@Override
@@ -63,6 +74,16 @@ public class Pad extends MultiTouchActivity {
 		soundIdFour = mSoundPoolHelper.load(this, R.raw.stick_drum,2);
 		soundIdFive = mSoundPoolHelper.load(this,R.raw.cymbal,2);
 		soundIdSix = mSoundPoolHelper.load(this,R.raw.hihat_opn,2);
+		soundIdSeven = mSoundPoolHelper.load(this,R.raw.cymbal,2);
+		soundIdEight = mSoundPoolHelper.load(this,R.raw.claps,2);
+		soundIdNine = mSoundPoolHelper.load(this,R.raw.cow_bell,2);
+		soundIdTen = mSoundPoolHelper.load(this,R.raw.hihat_opn,2);
+		soundIdEleven = mSoundPoolHelper.load(this,R.raw.kick_drum,2);
+		soundIdTwelve = mSoundPoolHelper.load(this,R.raw.claps,2);
+		soundIdThirteen = mSoundPoolHelper.load(this,R.raw.kick_drum,2);
+		soundIdFourteen = mSoundPoolHelper.load(this,R.raw.cow_bell,2);
+		soundIdFifteen = mSoundPoolHelper.load(this,R.raw.snar_drum,2);
+		soundIdSixteen = mSoundPoolHelper.load(this,R.raw.claps,2);
 
 		//soundIdUL = mSoundPoolHelper.load(this, R.raw.c,2);
 		//soundIdUR = mSoundPoolHelper.load(this,R.raw.d,2);
@@ -89,6 +110,31 @@ public class Pad extends MultiTouchActivity {
 		final TestButton buttonSix = (TestButton) findViewById(R.id.padSix);
 		buttonSix.setSoundId(soundIdSix);
 
+		final TestButton buttonSeven = (TestButton) findViewById(R.id.padSeven);
+		buttonSeven.setSoundId(soundIdSeven);
+
+		final TestButton buttonEight = (TestButton) findViewById(R.id.padEight);
+		buttonEight.setSoundId(soundIdEight);
+
+		final TestButton buttonNine = (TestButton) findViewById(R.id.padNine);
+		buttonNine.setSoundId(soundIdNine);
+
+		final TestButton buttonTen = (TestButton) findViewById(R.id.padTen);
+		buttonTen.setSoundId(soundIdTen);
+
+		final TestButton buttonEleven = (TestButton) findViewById(R.id.padEleven);
+		buttonEleven.setSoundId(soundIdEleven);
+		final TestButton buttonTwelve = (TestButton) findViewById(R.id.padTwelve);
+		buttonTwelve.setSoundId(soundIdTwelve);
+		final TestButton buttonThirteen = (TestButton) findViewById(R.id.padThirteen);
+		buttonThirteen.setSoundId(soundIdThirteen);
+		final TestButton buttonFourteen = (TestButton) findViewById(R.id.padFourteen);
+		buttonFourteen.setSoundId(soundIdFourteen);
+		final TestButton buttonFifteen = (TestButton) findViewById(R.id.padFifteen);
+		buttonFifteen.setSoundId(soundIdFifteen);
+		final TestButton buttonSixteen = (TestButton) findViewById(R.id.padSixteen);
+		buttonSixteen.setSoundId(soundIdSixteen);
+
 		int buttonSize = (int)(width/4);
 
 		buttonOne.requestLayout();
@@ -114,6 +160,46 @@ public class Pad extends MultiTouchActivity {
 		buttonSix.requestLayout();
 		buttonSix.getLayoutParams().width=buttonSize;
 		buttonSix.getLayoutParams().height=buttonSize;
+
+		buttonSeven.requestLayout();
+		buttonSeven.getLayoutParams().width=buttonSize;
+		buttonSeven.getLayoutParams().height=buttonSize;
+
+		buttonEight.requestLayout();
+		buttonEight.getLayoutParams().width=buttonSize;
+		buttonEight.getLayoutParams().height=buttonSize;
+
+		buttonNine.requestLayout();
+		buttonNine.getLayoutParams().width=buttonSize;
+		buttonNine.getLayoutParams().height=buttonSize;
+
+		buttonTen.requestLayout();
+		buttonTen.getLayoutParams().width=buttonSize;
+		buttonTen.getLayoutParams().height=buttonSize;
+
+		buttonEleven.requestLayout();
+		buttonEleven.getLayoutParams().width=buttonSize;
+		buttonEleven.getLayoutParams().height=buttonSize;
+
+		buttonTwelve.requestLayout();
+		buttonTwelve.getLayoutParams().width=buttonSize;
+		buttonTwelve.getLayoutParams().height=buttonSize;
+
+		buttonThirteen.requestLayout();
+		buttonThirteen.getLayoutParams().width=buttonSize;
+		buttonThirteen.getLayoutParams().height=buttonSize;
+
+		buttonFourteen.requestLayout();
+		buttonFourteen.getLayoutParams().width=buttonSize;
+		buttonFourteen.getLayoutParams().height=buttonSize;
+
+		buttonFifteen.requestLayout();
+		buttonFifteen.getLayoutParams().width=buttonSize;
+		buttonFifteen.getLayoutParams().height=buttonSize;
+
+		buttonSixteen.requestLayout();
+		buttonSixteen.getLayoutParams().width=buttonSize;
+		buttonSixteen.getLayoutParams().height=buttonSize;
 
 		final Button looper = (Button) findViewById(R.id.looper);
 		looper.setOnClickListener(new View.OnClickListener() {

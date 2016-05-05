@@ -51,7 +51,7 @@
     </LinearLayout>
        
     <LinearLayout
-    android:weightSum="2"
+    android:weightSum="4"
     android:orientation="horizontal"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
@@ -75,7 +75,116 @@
     android:src="@drawable/yellow_square_button"
     android:background="@android:color/transparent"
     android:layout_weight="1"/>
+    <com.gnyrfta.musicpad.TestButton
+        android:id="@+id/padSeven"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/purple_square_button"
+        android:background="@android:color/transparent"
+        android:layout_weight="1"/>
+    <com.gnyrfta.musicpad.TestButton
+        android:id="@+id/padEight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/yellow_square_button"
+        android:background="@android:color/transparent"
+        android:layout_weight="1"/>
     </LinearLayout>
+
+    <LinearLayout
+        android:weightSum="4"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+        <com.gnyrfta.musicpad.TestButton
+            android:id="@+id/padNine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/yellow_square_button"
+            android:background="@android:color/transparent"
+            android:layout_weight="1"
+            />
+        <com.gnyrfta.musicpad.TestButton
+            android:id="@+id/padTen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/red_square_button"
+            android:background="@android:color/transparent"
+            android:layout_weight="1"/>
+        <com.gnyrfta.musicpad.TestButton
+            android:id="@+id/padEleven"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/green_square_button"
+            android:background="@android:color/transparent"
+            android:layout_weight="1"/>
+        <com.gnyrfta.musicpad.TestButton
+            android:id="@+id/padTwelve"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/red_square_button"
+            android:background="@android:color/transparent"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:weightSum="4"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+        <com.gnyrfta.musicpad.TestButton
+            android:id="@+id/padThirteen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/red_square_button"
+            android:background="@android:color/transparent"
+            android:layout_weight="1"
+            />
+        <com.gnyrfta.musicpad.TestButton
+            android:id="@+id/padFourteen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/green_square_button"
+            android:background="@android:color/transparent"
+            android:layout_weight="1"/>
+        <com.gnyrfta.musicpad.TestButton
+            android:id="@+id/padFifteen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/yellow_square_button"
+            android:background="@android:color/transparent"
+            android:layout_weight="1"/>
+        <com.gnyrfta.musicpad.TestButton
+            android:id="@+id/padSixteen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/purple_square_button"
+            android:background="@android:color/transparent"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
         <LinearLayout
     android:weightSum="2"
     android:orientation="horizontal"
