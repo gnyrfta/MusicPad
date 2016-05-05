@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
+import android.view.Display;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -31,7 +32,7 @@ public class MainActivity extends ActionBarActivity {
 	public static com.gnyrfta.musicpad.SoundPoolHelper mSoundPoolHelper; 
 	Context context;
 	//public  TestButton buttonUpperLeft;
-	//public TestButtonTwo tb2;
+
 	
 	/*MainActivity(Context context)
 	{

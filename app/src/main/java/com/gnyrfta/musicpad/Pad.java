@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Display;
 import android.view.View;
 import android.widget.Button;
 import de.passsy.multitouch.MultiTouchActivity;
@@ -11,17 +12,21 @@ import de.passsy.multitouch.MultiTouchActivity;
 public class Pad extends MultiTouchActivity {
 	public static com.gnyrfta.musicpad.SoundPoolHelper mSoundPoolHelper; 
 	
-	public static int soundIdUL=0;
-	public static int soundIdUR=0;
-	public static int soundIdLL=0;
-	public static int soundIdLR=0;
-
+	public static int soundIdOne=0;
+	public static int soundIdTwo=0;
+	public static int soundIdThree=0;
+	public static int soundIdFour=0;
+	public static int soundIdFive=0;
+	public static int soundIdSix=0;
 	int soundIdTest=0; 	
 	int soundIdTest2=0;
 	@Override
 	public void onCreate(final Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.pad_layout_2);
+		Display display = getWindowManager().getDefaultDisplay();
+		int width = display.getWidth();
+		int height = display.getHeight();
 		mSoundPoolHelper = new com.gnyrfta.musicpad.SoundPoolHelper(2,this);
 		//Create method that does this: 
 		/*if(MainActivity.ULk.equals("Piano F"))
@@ -52,6 +57,13 @@ public class Pad extends MultiTouchActivity {
 		
 		soundIdTest = mSoundPoolHelper.load(this, R.raw.c,2);	
 		soundIdTest2 = mSoundPoolHelper.load(this, R.raw.f,2);
+		soundIdOne = mSoundPoolHelper.load(this,R.raw.cow_bell,2);
+		soundIdTwo = mSoundPoolHelper.load(this, R.raw.claps,2);
+		soundIdThree = mSoundPoolHelper.load(this, R.raw.hihat_closed,2);
+		soundIdFour = mSoundPoolHelper.load(this, R.raw.stick_drum,2);
+		soundIdFive = mSoundPoolHelper.load(this,R.raw.cymbal,2);
+		soundIdSix = mSoundPoolHelper.load(this,R.raw.hihat_opn,2);
+
 		//soundIdUL = mSoundPoolHelper.load(this, R.raw.c,2);
 		//soundIdUR = mSoundPoolHelper.load(this,R.raw.d,2);
 		//soundIdLL = mSoundPoolHelper.load(this, R.raw.f,2);
@@ -59,10 +71,50 @@ public class Pad extends MultiTouchActivity {
 
 
 		
-		final TestButton buttonUpperLeft = (TestButton) findViewById(R.id.padUpperLeft);
-        final TestButtonTwo buttonUpperRight = (TestButtonTwo) findViewById(R.id.padUpperRight);
-		final TestButtonThree buttonLowerLeft = (TestButtonThree) findViewById(R.id.padLowerLeft);
-		final TestButtonFour buttonLowerRight = (TestButtonFour) findViewById(R.id.padLowerRight);
+		final TestButton buttonOne = (TestButton) findViewById(R.id.padOne);
+		buttonOne.setSoundId(soundIdOne);
+
+        final TestButton buttonTwo = (TestButton) findViewById(R.id.padTwo);
+		buttonTwo.setSoundId(soundIdTwo);
+
+		final TestButton buttonThree =(TestButton) findViewById(R.id.padThree);
+		buttonThree.setSoundId(soundIdThree);
+
+		final TestButton buttonFour = (TestButton) findViewById(R.id.padFour);
+		buttonFour.setSoundId(soundIdFour);
+
+		final TestButton buttonFive = (TestButton) findViewById(R.id.padFive);
+		buttonFive.setSoundId(soundIdFive);
+
+		final TestButton buttonSix = (TestButton) findViewById(R.id.padSix);
+		buttonSix.setSoundId(soundIdSix);
+
+		int buttonSize = (int)(width/4);
+
+		buttonOne.requestLayout();
+		buttonOne.getLayoutParams().width=buttonSize;
+		buttonOne.getLayoutParams().height=buttonSize;
+
+		buttonTwo.requestLayout();
+		buttonTwo.getLayoutParams().width=buttonSize;
+		buttonTwo.getLayoutParams().height=buttonSize;
+
+		buttonThree.requestLayout();
+		buttonThree.getLayoutParams().width=buttonSize;
+		buttonThree.getLayoutParams().height=buttonSize;
+
+		buttonFour.requestLayout();
+		buttonFour.getLayoutParams().width=buttonSize;
+		buttonFour.getLayoutParams().height=buttonSize;
+
+		buttonFive.requestLayout();
+		buttonFive.getLayoutParams().width=buttonSize;
+		buttonFive.getLayoutParams().height=buttonSize;
+
+		buttonSix.requestLayout();
+		buttonSix.getLayoutParams().width=buttonSize;
+		buttonSix.getLayoutParams().height=buttonSize;
+
 		final Button looper = (Button) findViewById(R.id.looper);
 		looper.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -87,7 +139,7 @@ public class Pad extends MultiTouchActivity {
 		{		
 			if(firstTime)
 			{
-				mSoundPoolHelper.play(Pad.soundIdUL);
+				mSoundPoolHelper.play(Pad.soundIdOne);
 				firstTime=false;
 			}
 			long timePassed=System.nanoTime()-startTime;
@@ -155,10 +207,13 @@ public class Pad extends MultiTouchActivity {
 		}
 		return a;
 	}
+	//pads should be in a grid of 4x5 or 5x5:
 	public void loadSounds(String soundChosen, String pad)
 	{
-		if(pad.equals("UL")) 
+		if(pad.equals("UL"))
 		{
+			soundIdOne = mSoundPoolHelper.load(this,R.raw.cow_bell,2);
+			/*
 			if(soundChosen.equals("Clap"))
 			{
 				soundIdUL = mSoundPoolHelper.load(this, R.raw.claps,2);	
@@ -217,10 +272,12 @@ public class Pad extends MultiTouchActivity {
 			else
 			{
 				Log.d("in loadSounds","no sound was recognized as chosen.");
-			}
+			}*/
 		}
-		else if(pad.equals("UR"))
+		if(pad.equals("UR"))
 		{
+			soundIdTwo = mSoundPoolHelper.load(this, R.raw.claps,2);
+			/*
 			if(soundChosen.equals("Clap"))
 			{
 				soundIdUR = mSoundPoolHelper.load(this, R.raw.claps,2);	
@@ -279,10 +336,12 @@ public class Pad extends MultiTouchActivity {
 			else
 			{
 				Log.d("in loadSounds","no sound was recognized as chosen.");
-			}
+			}*/
 		}
 		else if(pad.equals("LL"))
 		{
+			soundIdFive = mSoundPoolHelper.load(this, R.raw.hihat_closed,2);
+			/*
 			if(soundChosen.equals("Clap"))
 			{
 				soundIdLL = mSoundPoolHelper.load(this, R.raw.claps,2);	
@@ -341,10 +400,12 @@ public class Pad extends MultiTouchActivity {
 			else
 			{
 				Log.d("in loadSounds","no sound was recognized as chosen.");
-			}
+			}*/
 		}
 		else if(pad.equals("LR"))
 		{
+			soundIdSix = mSoundPoolHelper.load(this, R.raw.stick_drum,2);
+			/*
 			if(soundChosen.equals("Clap"))
 			{
 				soundIdLR = mSoundPoolHelper.load(this, R.raw.claps,2);	
@@ -403,7 +464,7 @@ public class Pad extends MultiTouchActivity {
 			else
 			{
 				Log.d("in loadSounds","no sound was recognized as chosen.");
-			}
+			}*/
 		}
 			
 	}
