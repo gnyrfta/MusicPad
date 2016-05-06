@@ -12,7 +12,7 @@ import android.media.SoundPool;
 public class SoundPoolHelper extends SoundPool {
     private Set<Integer> mLoaded;
     private Context mContext;
-
+    private int loop=0;
     public SoundPoolHelper(int maxStreams, Context context) {
         this(maxStreams, AudioManager.STREAM_MUSIC, 0, context);
     }
@@ -36,7 +36,18 @@ public class SoundPoolHelper extends SoundPool {
         float volume = actualVolume / maxVolume;
         // Is the sound loaded already?
         if (mLoaded.contains(soundID)) {
-            play(soundID, volume, volume, 1, 0, 1f);
+            play(soundID, volume, volume, 1, loop, 1f);
+        }
+    }
+    public void setLoop(boolean looping)
+    {
+        if(looping)
+        {
+            loop=-1;
+        }
+        else
+        {
+            loop=0;
         }
     }
 }

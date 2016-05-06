@@ -1,15 +1,19 @@
 [
     {
+        "merged": "/home/david/AndroidStudioProjects/MusicPad/app/build/intermediates/res/merged/debug/raw/hiphopbass4.mp3",
+        "source": "/home/david/AndroidStudioProjects/MusicPad/app/src/main/res/raw/hiphopbass4.mp3"
+    },
+    {
         "merged": "/home/david/AndroidStudioProjects/MusicPad/app/build/intermediates/res/merged/debug/raw/c.wav",
         "source": "/home/david/AndroidStudioProjects/MusicPad/app/src/main/res/raw/c.wav"
     },
     {
-        "merged": "/home/david/AndroidStudioProjects/MusicPad/app/build/intermediates/res/merged/debug/raw/hihat_closed.wav",
-        "source": "/home/david/AndroidStudioProjects/MusicPad/app/src/main/res/raw/hihat_closed.wav"
-    },
-    {
         "merged": "/home/david/AndroidStudioProjects/MusicPad/app/build/intermediates/res/merged/debug/raw/cow_bell.wav",
         "source": "/home/david/AndroidStudioProjects/MusicPad/app/src/main/res/raw/cow_bell.wav"
+    },
+    {
+        "merged": "/home/david/AndroidStudioProjects/MusicPad/app/build/intermediates/res/merged/debug/raw/hihat_closed.wav",
+        "source": "/home/david/AndroidStudioProjects/MusicPad/app/src/main/res/raw/hihat_closed.wav"
     },
     {
         "merged": "/home/david/AndroidStudioProjects/MusicPad/app/build/intermediates/res/merged/debug/raw/claps.wav",
@@ -40,6 +44,10 @@
         "source": "/home/david/AndroidStudioProjects/MusicPad/app/src/main/res/raw/g.wav"
     },
     {
+        "merged": "/home/david/AndroidStudioProjects/MusicPad/app/build/intermediates/res/merged/debug/raw/hiphopbass10.mp3",
+        "source": "/home/david/AndroidStudioProjects/MusicPad/app/src/main/res/raw/hiphopbass10.mp3"
+    },
+    {
         "merged": "/home/david/AndroidStudioProjects/MusicPad/app/build/intermediates/res/merged/debug/raw/stick_drum.wav",
         "source": "/home/david/AndroidStudioProjects/MusicPad/app/src/main/res/raw/stick_drum.wav"
     },
@@ -50,5 +58,17 @@
     {
         "merged": "/home/david/AndroidStudioProjects/MusicPad/app/build/intermediates/res/merged/debug/raw/cymbal.wav",
         "source": "/home/david/AndroidStudioProjects/MusicPad/app/src/main/res/raw/cymbal.wav"
+    },
+    {
+        "merged": "/home/david/AndroidStudioProjects/MusicPad/app/build/intermediates/res/merged/debug/raw/hiphopbass13.mp3",
+        "source": "/home/david/AndroidStudioProjects/MusicPad/app/src/main/res/raw/hiphopbass13.mp3"
+    },
+    {
+        "merged": "/home/david/AndroidStudioProjects/MusicPad/app/build/intermediates/res/merged/debug/raw/ahh_relax_female.mp3",
+        "source": "/home/david/AndroidStudioProjects/MusicPad/app/src/main/res/raw/ahh_relax_female.mp3"
+    },
+    {
+        "merged": "/home/david/AndroidStudioProjects/MusicPad/app/build/intermediates/res/merged/debug/raw/hiphopbass2.mp3",
+        "source": "/home/david/AndroidStudioProjects/MusicPad/app/src/main/res/raw/hiphopbass2.mp3"
     }
 ]

@@ -31,6 +31,8 @@ public class Pad extends MultiTouchActivity {
 
 	int soundIdTest=0; 	
 	int soundIdTest2=0;
+	static boolean baseLinePlaying=false;
+	static int baseLinePlayingIs=0;
 	@Override
 	public void onCreate(final Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -38,7 +40,7 @@ public class Pad extends MultiTouchActivity {
 		Display display = getWindowManager().getDefaultDisplay();
 		int width = display.getWidth();
 		int height = display.getHeight();
-		mSoundPoolHelper = new com.gnyrfta.musicpad.SoundPoolHelper(2,this);
+		mSoundPoolHelper = new com.gnyrfta.musicpad.SoundPoolHelper(10,this);
 		//Create method that does this: 
 		/*if(MainActivity.ULk.equals("Piano F"))
 		{
@@ -68,7 +70,7 @@ public class Pad extends MultiTouchActivity {
 		
 		soundIdTest = mSoundPoolHelper.load(this, R.raw.c,2);	
 		soundIdTest2 = mSoundPoolHelper.load(this, R.raw.f,2);
-		soundIdOne = mSoundPoolHelper.load(this,R.raw.cow_bell,2);
+		soundIdOne = mSoundPoolHelper.load(this,R.raw.ahh_relax_female,2);
 		soundIdTwo = mSoundPoolHelper.load(this, R.raw.claps,2);
 		soundIdThree = mSoundPoolHelper.load(this, R.raw.hihat_closed,2);
 		soundIdFour = mSoundPoolHelper.load(this, R.raw.stick_drum,2);
@@ -80,10 +82,10 @@ public class Pad extends MultiTouchActivity {
 		soundIdTen = mSoundPoolHelper.load(this,R.raw.hihat_opn,2);
 		soundIdEleven = mSoundPoolHelper.load(this,R.raw.kick_drum,2);
 		soundIdTwelve = mSoundPoolHelper.load(this,R.raw.claps,2);
-		soundIdThirteen = mSoundPoolHelper.load(this,R.raw.kick_drum,2);
-		soundIdFourteen = mSoundPoolHelper.load(this,R.raw.cow_bell,2);
-		soundIdFifteen = mSoundPoolHelper.load(this,R.raw.snar_drum,2);
-		soundIdSixteen = mSoundPoolHelper.load(this,R.raw.claps,2);
+		soundIdThirteen = mSoundPoolHelper.load(this,R.raw.hiphopbass2,2);
+		soundIdFourteen = mSoundPoolHelper.load(this,R.raw.hiphopbass4,2);
+		soundIdFifteen = mSoundPoolHelper.load(this,R.raw.hiphopbass13,2);
+		soundIdSixteen = mSoundPoolHelper.load(this,R.raw.hiphopbass10,2);
 
 		//soundIdUL = mSoundPoolHelper.load(this, R.raw.c,2);
 		//soundIdUR = mSoundPoolHelper.load(this,R.raw.d,2);
@@ -126,13 +128,13 @@ public class Pad extends MultiTouchActivity {
 		buttonEleven.setSoundId(soundIdEleven);
 		final MusicButton buttonTwelve = (MusicButton) findViewById(R.id.padTwelve);
 		buttonTwelve.setSoundId(soundIdTwelve);
-		final MusicButton buttonThirteen = (MusicButton) findViewById(R.id.padThirteen);
+		final MusicButtonLooper buttonThirteen = (MusicButtonLooper) findViewById(R.id.padThirteen);
 		buttonThirteen.setSoundId(soundIdThirteen);
-		final MusicButton buttonFourteen = (MusicButton) findViewById(R.id.padFourteen);
+		final MusicButtonLooper buttonFourteen = (MusicButtonLooper) findViewById(R.id.padFourteen);
 		buttonFourteen.setSoundId(soundIdFourteen);
-		final MusicButton buttonFifteen = (MusicButton) findViewById(R.id.padFifteen);
+		final MusicButtonLooper buttonFifteen = (MusicButtonLooper) findViewById(R.id.padFifteen);
 		buttonFifteen.setSoundId(soundIdFifteen);
-		final MusicButton buttonSixteen = (MusicButton) findViewById(R.id.padSixteen);
+		final MusicButtonLooper buttonSixteen = (MusicButtonLooper) findViewById(R.id.padSixteen);
 		buttonSixteen.setSoundId(soundIdSixteen);
 
 		int buttonSize = (int)(width/4);
@@ -188,18 +190,22 @@ public class Pad extends MultiTouchActivity {
 		buttonThirteen.requestLayout();
 		buttonThirteen.getLayoutParams().width=buttonSize;
 		buttonThirteen.getLayoutParams().height=buttonSize;
+		buttonThirteen.setButtonNumber(13);
 
 		buttonFourteen.requestLayout();
 		buttonFourteen.getLayoutParams().width=buttonSize;
 		buttonFourteen.getLayoutParams().height=buttonSize;
+		buttonFourteen.setButtonNumber(14);
 
 		buttonFifteen.requestLayout();
 		buttonFifteen.getLayoutParams().width=buttonSize;
 		buttonFifteen.getLayoutParams().height=buttonSize;
+		buttonFifteen.setButtonNumber(15);
 
 		buttonSixteen.requestLayout();
 		buttonSixteen.getLayoutParams().width=buttonSize;
 		buttonSixteen.getLayoutParams().height=buttonSize;
+		buttonSixteen.setButtonNumber(16);
 
 		final Button looper = (Button) findViewById(R.id.looper);
 		looper.setOnClickListener(new View.OnClickListener() {

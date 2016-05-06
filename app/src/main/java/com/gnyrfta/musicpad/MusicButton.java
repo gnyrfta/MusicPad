@@ -22,6 +22,7 @@ public class MusicButton extends ImageButton {
 		//setText("I recive a MotionEvent");
 		if (event.getAction() == MotionEvent.ACTION_DOWN) {
 			//setText("I can recive Move events outside of my View");
+			Pad.mSoundPoolHelper.setLoop(false);
 			Pad.mSoundPoolHelper.play(soundToPlay);
 			//Pad.mSoundPoolHelper.play(Pad.soundIdUL);
 		}
@@ -31,5 +32,12 @@ public class MusicButton extends ImageButton {
 	{
 		soundToPlay=soundId;
 		return soundToPlay;
+	}
+	public void setLoop(boolean looping)
+	{
+		if(looping)
+		{
+			Pad.mSoundPoolHelper.setLoop(true);
+		}
 	}
 }

@@ -28,12 +28,12 @@
         "source": "/home/david/AndroidStudioProjects/MusicPad/app/build/generated/res/pngs/debug/drawable-ldpi/abc_btn_radio_on_mtrl.png"
     },
     {
-        "merged": "/home/david/AndroidStudioProjects/MusicPad/app/build/intermediates/res/merged/debug/drawable-ldpi-v4/abc_ic_menu_cut_material.png",
-        "source": "/home/david/AndroidStudioProjects/MusicPad/app/build/generated/res/pngs/debug/drawable-ldpi/abc_ic_menu_cut_material.png"
-    },
-    {
         "merged": "/home/david/AndroidStudioProjects/MusicPad/app/build/intermediates/res/merged/debug/drawable-ldpi-v4/abc_ic_menu_selectall_material.png",
         "source": "/home/david/AndroidStudioProjects/MusicPad/app/build/generated/res/pngs/debug/drawable-ldpi/abc_ic_menu_selectall_material.png"
+    },
+    {
+        "merged": "/home/david/AndroidStudioProjects/MusicPad/app/build/intermediates/res/merged/debug/drawable-ldpi-v4/abc_ic_menu_cut_material.png",
+        "source": "/home/david/AndroidStudioProjects/MusicPad/app/build/generated/res/pngs/debug/drawable-ldpi/abc_ic_menu_cut_material.png"
     },
     {
         "merged": "/home/david/AndroidStudioProjects/MusicPad/app/build/intermediates/res/merged/debug/drawable-ldpi-v4/abc_ic_menu_share_material.png",
