@@ -128,13 +128,13 @@ public class Pad extends MultiTouchActivity {
 		buttonEleven.setSoundId(soundIdEleven);
 		final MusicButton buttonTwelve = (MusicButton) findViewById(R.id.padTwelve);
 		buttonTwelve.setSoundId(soundIdTwelve);
-		final MusicButtonLooper buttonThirteen = (MusicButtonLooper) findViewById(R.id.padThirteen);
+		final MusicButton buttonThirteen = (MusicButton) findViewById(R.id.padThirteen);
 		buttonThirteen.setSoundId(soundIdThirteen);
-		final MusicButtonLooper buttonFourteen = (MusicButtonLooper) findViewById(R.id.padFourteen);
+		final MusicButton buttonFourteen = (MusicButton) findViewById(R.id.padFourteen);
 		buttonFourteen.setSoundId(soundIdFourteen);
-		final MusicButtonLooper buttonFifteen = (MusicButtonLooper) findViewById(R.id.padFifteen);
+		final MusicButton buttonFifteen = (MusicButton) findViewById(R.id.padFifteen);
 		buttonFifteen.setSoundId(soundIdFifteen);
-		final MusicButtonLooper buttonSixteen = (MusicButtonLooper) findViewById(R.id.padSixteen);
+		final MusicButton buttonSixteen = (MusicButton) findViewById(R.id.padSixteen);
 		buttonSixteen.setSoundId(soundIdSixteen);
 
 		int buttonSize = (int)(width/4);
@@ -190,22 +190,22 @@ public class Pad extends MultiTouchActivity {
 		buttonThirteen.requestLayout();
 		buttonThirteen.getLayoutParams().width=buttonSize;
 		buttonThirteen.getLayoutParams().height=buttonSize;
-		buttonThirteen.setButtonNumber(13);
+	//	buttonThirteen.setButtonNumber(13);
 
 		buttonFourteen.requestLayout();
 		buttonFourteen.getLayoutParams().width=buttonSize;
 		buttonFourteen.getLayoutParams().height=buttonSize;
-		buttonFourteen.setButtonNumber(14);
+	//	buttonFourteen.setButtonNumber(14);
 
 		buttonFifteen.requestLayout();
 		buttonFifteen.getLayoutParams().width=buttonSize;
 		buttonFifteen.getLayoutParams().height=buttonSize;
-		buttonFifteen.setButtonNumber(15);
+	//	buttonFifteen.setButtonNumber(15);
 
 		buttonSixteen.requestLayout();
 		buttonSixteen.getLayoutParams().width=buttonSize;
 		buttonSixteen.getLayoutParams().height=buttonSize;
-		buttonSixteen.setButtonNumber(16);
+	//	buttonSixteen.setButtonNumber(16);
 
 		final Button looper = (Button) findViewById(R.id.looper);
 		looper.setOnClickListener(new View.OnClickListener() {

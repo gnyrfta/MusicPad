@@ -23,6 +23,7 @@ public class MusicButtonLooper extends ImageButton {
         //setText("I recive a MotionEvent");
         if (event.getAction() == MotionEvent.ACTION_DOWN) {
             //setText("I can recive Move events outside of my View");
+            /*
             if(Pad.baseLinePlaying)
             {
                 switch(Pad.baseLinePlayingIs)
@@ -37,7 +38,7 @@ public class MusicButtonLooper extends ImageButton {
                         break;
                     default://do nothing
                 }
-            }
+            }*/
             Pad.mSoundPoolHelper.setLoop(true);
             Pad.mSoundPoolHelper.play(soundToPlay);
             Pad.baseLinePlaying=true;
