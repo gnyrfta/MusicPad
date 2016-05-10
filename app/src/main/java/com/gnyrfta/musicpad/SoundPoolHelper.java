@@ -29,15 +29,17 @@ public class SoundPoolHelper extends SoundPool {
         });
     }
 
-    public void play(int soundID) {
+    public int play(int soundID) {
+        int returnValue=0;
         AudioManager audioManager = (AudioManager) mContext.getSystemService( Context.AUDIO_SERVICE);
         float actualVolume = (float) audioManager.getStreamVolume(AudioManager.STREAM_MUSIC);
         float maxVolume = (float) audioManager.getStreamMaxVolume(AudioManager.STREAM_MUSIC);
         float volume = actualVolume / maxVolume;
         // Is the sound loaded already?
         if (mLoaded.contains(soundID)) {
-            play(soundID, volume, volume, 1, loop, 1f);
+           returnValue  = play(soundID, volume, volume, 1, loop, 1f);
         }
+        return returnValue;
     }
     public void setLoop(boolean looping)
     {

@@ -146,7 +146,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="1" >
-        <com.gnyrfta.musicpad.MusicButton
+        <com.gnyrfta.musicpad.MusicButtonLooper
             android:id="@+id/padThirteen"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -156,7 +156,7 @@
             android:background="@android:color/transparent"
             android:layout_weight="1"
             />
-        <com.gnyrfta.musicpad.MusicButton
+        <com.gnyrfta.musicpad.MusicButtonLooper
             android:id="@+id/padFourteen"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -165,7 +165,7 @@
             android:src="@drawable/green_square_button"
             android:background="@android:color/transparent"
             android:layout_weight="1"/>
-        <com.gnyrfta.musicpad.MusicButton
+        <com.gnyrfta.musicpad.MusicButtonLooper
             android:id="@+id/padFifteen"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
