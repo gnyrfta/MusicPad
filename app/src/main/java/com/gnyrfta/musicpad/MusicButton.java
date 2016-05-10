@@ -39,5 +39,9 @@ public class MusicButton extends ImageButton {
 		{
 			Pad.mSoundPoolHelper.setLoop(true);
 		}
+		else
+		{
+			Pad.mSoundPoolHelper.setLoop(false);
+		}
 	}
 }

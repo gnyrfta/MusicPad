@@ -134,7 +134,7 @@ public class Pad extends MultiTouchActivity {
 		buttonFourteen.setSoundId(soundIdFourteen);
 		final MusicButton buttonFifteen = (MusicButton) findViewById(R.id.padFifteen);
 		buttonFifteen.setSoundId(soundIdFifteen);
-		final MusicButton buttonSixteen = (MusicButton) findViewById(R.id.padSixteen);
+		final MusicButtonLooper buttonSixteen = (MusicButtonLooper) findViewById(R.id.padSixteen);
 		buttonSixteen.setSoundId(soundIdSixteen);
 
 		int buttonSize = (int)(width/4);

@@ -174,7 +174,7 @@
             android:src="@drawable/yellow_square_button"
             android:background="@android:color/transparent"
             android:layout_weight="1"/>
-        <com.gnyrfta.musicpad.MusicButton
+        <com.gnyrfta.musicpad.MusicButtonLooper
             android:id="@+id/padSixteen"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

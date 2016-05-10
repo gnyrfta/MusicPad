@@ -7,15 +7,18 @@ import android.view.Display;
 import android.view.MotionEvent;
 import android.widget.ImageButton;
 
+import android.os.Handler;
+
 
 public class MusicButtonLooper extends ImageButton {
-    private int soundToPlay;
+    private int soundToPlay=0;
     private int buttonNumber=0;
     public MusicButtonLooper (final Context context, final AttributeSet attrs) {
         super(context, attrs);
 
         // TODO Auto-generated constructor stub
     }
+
 
     @Override
     public boolean onTouchEvent(final MotionEvent event) {
@@ -40,10 +43,17 @@ public class MusicButtonLooper extends ImageButton {
                 }
             }*/
             Pad.mSoundPoolHelper.setLoop(true);
-            Pad.mSoundPoolHelper.play(soundToPlay);
-            Pad.baseLinePlaying=true;
-            Pad.baseLinePlayingIs=buttonNumber;
-            //Pad.mSoundPoolHelper.play(Pad.soundIdUL);
+        //    Pad.mSoundPoolHelper.play(soundToPlay);
+        //    Pad.baseLinePlaying=true;
+        //    Pad.baseLinePlayingIs=buttonNumber;
+            //Pad.mSoundPoolHelper.play(Pad.soundId
+            final Handler handler = new Handler();
+            final int mStreamID=0;
+            handler.postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    Pad.mSoundPoolHelper.play(soundToPlay);
+                }}, 350);
         }
         return super.onTouchEvent(event);
     }
