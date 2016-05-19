@@ -12,12 +12,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7b4e37d3-1c81-4324-8646-d03bd5b27e78" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/gnyrfta/musicpad/MusicButtonLooper$1.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/gnyrfta/musicpad/MusicButton.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/gnyrfta/musicpad/MusicButton.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-ldpi/green_square_button_with_light.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-ldpi/purple_square_button_with_light.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-ldpi/red_square_button_with_light.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-ldpi/yellow_square_button_with_light.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/gnyrfta/musicpad/MyApp.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/gnyrfta/musicpad/Pad$1.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/gnyrfta/musicpad/MainActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/gnyrfta/musicpad/MainActivity.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/gnyrfta/musicpad/MusicButtonLooper.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/gnyrfta/musicpad/MusicButtonLooper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/gnyrfta/musicpad/Pad$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/gnyrfta/musicpad/Pad$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/gnyrfta/musicpad/Pad.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/gnyrfta/musicpad/Pad.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/gnyrfta/musicpad/SoundPoolHelper.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/gnyrfta/musicpad/SoundPoolHelper.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/v7/appcompat/R$drawable.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/v7/appcompat/R$drawable.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/gnyrfta/musicpad/R$drawable.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/gnyrfta/musicpad/R$drawable.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/gnyrfta/musicpad/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/gnyrfta/musicpad/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/gnyrfta/musicpad/R$integer.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/gnyrfta/musicpad/R$integer.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/gnyrfta/musicpad/R$layout.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/gnyrfta/musicpad/R$layout.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/gnyrfta/musicpad/R$menu.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/gnyrfta/musicpad/R$menu.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/gnyrfta/musicpad/R$raw.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/gnyrfta/musicpad/R$raw.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/gnyrfta/musicpad/R$string.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/gnyrfta/musicpad/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/gnyrfta/musicpad/R$style.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/gnyrfta/musicpad/R$style.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/gnyrfta/musicpad/R$styleable.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/gnyrfta/musicpad/R$styleable.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/gnyrfta/musicpad/R.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/gnyrfta/musicpad/R.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/outputs/apk/app-debug-unaligned.apk" afterPath="$PROJECT_DIR$/app/build/outputs/apk/app-debug-unaligned.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/outputs/apk/app-debug.apk" afterPath="$PROJECT_DIR$/app/build/outputs/apk/app-debug.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/cache.properties.lock" />
@@ -35,11 +49,17 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/resources-debug.ap_" afterPath="$PROJECT_DIR$/app/build/intermediates/res/resources-debug.ap_" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/support-annotations-23.2.0_dba36da1d2ac7665f10ec31b9bbe39aede0228d5.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/support-annotations-23.2.0_dba36da1d2ac7665f10ec31b9bbe39aede0228d5.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/taskArtifacts.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/manifests/full/debug/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/manifests/full/debug/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/gnyrfta/musicpad/MusicButtonLooper.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/gnyrfta/musicpad/MusicButtonLooper.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/gnyrfta/musicpad/Pad.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/gnyrfta/musicpad/Pad.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/gnyrfta/musicpad/SoundPoolHelper.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/gnyrfta/musicpad/SoundPoolHelper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterPath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/v7/appcompat/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/v7/appcompat/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/com/gnyrfta/musicpad/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/com/gnyrfta/musicpad/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/symbols/debug/R.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/symbols/debug/R.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/drawable-hdpi-v4.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/drawable-hdpi-v4.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/drawable-ldpi-v4.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/drawable-ldpi-v4.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-debug-report.txt" afterPath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-debug-report.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merger.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merger.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/pad_layout_2.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/pad_layout_2.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/pad_layout_2.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/pad_layout_2.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -86,22 +106,24 @@
       <file leaf-file-name="Pad.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gnyrfta/musicpad/Pad.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-14.0">
-              <caret line="35" column="31" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="31" />
-              <folding />
+            <state vertical-scroll-proportion="0.53333336">
+              <caret line="508" column="22" selection-start-line="508" selection-start-column="22" selection-end-line="508" selection-end-column="22" />
+              <folding>
+                <element signature="e#11170#11176#0" expanded="true" />
+                <element signature="e#17612#17621#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pad_layout_2.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/pad_layout_2.xml">
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
+      <file leaf-file-name="MyApp.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gnyrfta/musicpad/MyApp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.48387095">
-              <caret line="140" column="19" selection-start-line="140" selection-start-column="19" selection-end-line="140" selection-end-column="19" />
-              <folding />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -121,12 +143,12 @@
       <file leaf-file-name="MusicButtonLooper.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gnyrfta/musicpad/MusicButtonLooper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.6035634">
-              <caret line="60" column="17" selection-start-line="60" selection-start-column="17" selection-end-line="60" selection-end-column="17" />
+            <state vertical-scroll-proportion="1.2003816">
+              <caret line="68" column="49" selection-start-line="68" selection-start-column="49" selection-end-line="68" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2388#2389#0" expanded="true" />
-                <element signature="e#2431#2432#0" expanded="true" />
+                <element signature="e#3303#3304#0" expanded="true" />
+                <element signature="e#3346#3347#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -136,7 +158,7 @@
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gnyrfta/musicpad/SoundPoolHelper.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="39" column="18" selection-start-line="39" selection-start-column="18" selection-end-line="39" selection-end-column="18" />
+              <caret line="36" column="48" selection-start-line="36" selection-start-column="48" selection-end-line="36" selection-end-column="48" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#SoundPoolHelper#1;class#SoundPoolHelper#0" expanded="false" />
@@ -1719,15 +1741,16 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-ldltr-v21/values-ldltr-v21.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/gnyrfta/musicpad/TestButton.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/gnyrfta/musicpad/MainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/gnyrfta/musicpad/MusicButton.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/pad_layout_2.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/gnyrfta/musicpad/SoundPoolHelper.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/gnyrfta/musicpad/Pad.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/pad_layout_2.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/gnyrfta/musicpad/MyApp.java" />
+        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/gnyrfta/musicpad/MusicButtonLooper.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/gnyrfta/musicpad/Pad.java" />
       </list>
     </option>
   </component>
@@ -1773,16 +1796,8 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MusicPad" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -1803,8 +1818,16 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MusicPad" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="AndroidView">
         <subPane>
           <PATH>
@@ -1825,24 +1848,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="res" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MusicPad" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layout" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -1886,6 +1891,10 @@
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="manifests" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidManifestsGroupNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -1900,11 +1909,12 @@
     <property name="android.project.structure.proportion" value="0.15" />
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="4203c8bfe247a100" />
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="Nexus_9_API_23" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable-ldpi" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/src/main/res/raw" />
       <recent name="$PROJECT_DIR$/app/src/main/res/drawable-ldpi" />
+      <recent name="$PROJECT_DIR$/app/src/main/res/raw" />
       <recent name="$PROJECT_DIR$/app/src/main/res/drawable-hdpi" />
     </key>
   </component>
@@ -2082,7 +2092,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1301" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -2090,7 +2100,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22866344" sideWeight="0.49083665" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1078905" sideWeight="0.49083665" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -2105,7 +2115,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32988048" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2820717" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2820717" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32850242" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -2120,11 +2130,11 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32850242" sideWeight="0.49083665" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32850242" sideWeight="0.5091633" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2820717" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -2143,8 +2153,8 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.84863126" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32988048" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
@@ -2170,7 +2180,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="87" column="74" selection-start-line="87" selection-start-column="74" selection-end-line="87" selection-end-column="74" />
-          <folding />
+          <folding>
+            <element signature="e#11170#11176#0" expanded="true" />
+            <element signature="e#17612#17621#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2201,8 +2214,8 @@
           <caret line="55" column="24" selection-start-line="55" selection-start-column="24" selection-end-line="55" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2388#2389#0" expanded="true" />
-            <element signature="e#2431#2432#0" expanded="true" />
+            <element signature="e#3303#3304#0" expanded="true" />
+            <element signature="e#3346#3347#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2224,8 +2237,8 @@
           <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2388#2389#0" expanded="true" />
-            <element signature="e#2431#2432#0" expanded="true" />
+            <element signature="e#3303#3304#0" expanded="true" />
+            <element signature="e#3346#3347#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2245,7 +2258,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="52" column="39" selection-start-line="52" selection-start-column="39" selection-end-line="52" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2253,7 +2265,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#11170#11176#0" expanded="true" />
+            <element signature="e#17612#17621#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2284,8 +2299,8 @@
           <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2388#2389#0" expanded="true" />
-            <element signature="e#2431#2432#0" expanded="true" />
+            <element signature="e#3303#3304#0" expanded="true" />
+            <element signature="e#3346#3347#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2305,7 +2320,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="52" column="39" selection-start-line="52" selection-start-column="39" selection-end-line="52" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2313,7 +2327,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="35" column="43" selection-start-line="35" selection-start-column="43" selection-end-line="35" selection-end-column="43" />
-          <folding />
+          <folding>
+            <element signature="e#11170#11176#0" expanded="true" />
+            <element signature="e#17612#17621#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2342,7 +2359,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="52" column="39" selection-start-line="52" selection-start-column="39" selection-end-line="52" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2350,7 +2366,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="137" column="40" selection-start-line="137" selection-start-column="40" selection-end-line="137" selection-end-column="40" />
-          <folding />
+          <folding>
+            <element signature="e#11170#11176#0" expanded="true" />
+            <element signature="e#17612#17621#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2379,7 +2398,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="52" column="39" selection-start-line="52" selection-start-column="39" selection-end-line="52" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2387,7 +2405,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#11170#11176#0" expanded="true" />
+            <element signature="e#17612#17621#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2538,14 +2559,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-10.5">
@@ -2565,6 +2578,27 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="52" column="39" selection-start-line="52" selection-start-column="39" selection-end-line="52" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gnyrfta/musicpad/SoundPoolHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="36" column="48" selection-start-line="36" selection-start-column="48" selection-end-line="36" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#SoundPoolHelper#1;class#SoundPoolHelper#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/pad_layout_2.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.935484">
+          <caret line="185" column="19" selection-start-line="185" selection-start-column="19" selection-end-line="185" selection-end-column="19" />
           <folding />
         </state>
       </provider>
@@ -2579,44 +2613,43 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/pad_layout_2.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.48387095">
-          <caret line="140" column="19" selection-start-line="140" selection-start-column="19" selection-end-line="140" selection-end-column="19" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="39" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gnyrfta/musicpad/SoundPoolHelper.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gnyrfta/musicpad/MyApp.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="39" column="18" selection-start-line="39" selection-start-column="18" selection-end-line="39" selection-end-column="18" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#SoundPoolHelper#1;class#SoundPoolHelper#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gnyrfta/musicpad/Pad.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.0">
-          <caret line="35" column="31" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="31" />
-          <folding />
+        <state vertical-scroll-proportion="0.53333336">
+          <caret line="508" column="22" selection-start-line="508" selection-start-column="22" selection-end-line="508" selection-end-column="22" />
+          <folding>
+            <element signature="e#11170#11176#0" expanded="true" />
+            <element signature="e#17612#17621#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gnyrfta/musicpad/MusicButtonLooper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.6035634">
-          <caret line="60" column="17" selection-start-line="60" selection-start-column="17" selection-end-line="60" selection-end-column="17" />
+        <state vertical-scroll-proportion="1.2003816">
+          <caret line="68" column="49" selection-start-line="68" selection-start-column="49" selection-end-line="68" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2388#2389#0" expanded="true" />
-            <element signature="e#2431#2432#0" expanded="true" />
+            <element signature="e#3303#3304#0" expanded="true" />
+            <element signature="e#3346#3347#0" expanded="true" />
           </folding>
         </state>
       </provider>

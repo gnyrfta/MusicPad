@@ -2,6 +2,7 @@ package com.gnyrfta.musicpad;
 
 import java.util.ArrayList;
 
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Display;
@@ -28,8 +29,22 @@ public class Pad extends MultiTouchActivity {
 	public static int soundIdFourteen=0;
 	public static int soundIdFifteen=0;
 	public static int soundIdSixteen=0;
+	public static MusicButtonLooper buttonThirteen;
+	public static MusicButtonLooper buttonFourteen;
+	public static MusicButtonLooper buttonFifteen;
+	public static MusicButtonLooper buttonSixteen;
 
-	int soundIdTest=0; 	
+	static Drawable redLightOn = MyApp.context().getResources().getDrawable(R.drawable.red_square_button_with_light);
+	static Drawable greenLightOn = MyApp.context().getResources().getDrawable(R.drawable.green_square_button_with_light);
+	static Drawable yellowLightOn = MyApp.context().getResources().getDrawable(R.drawable.yellow_square_button_with_light);
+	static Drawable purpleLightOn = MyApp.context().getResources().getDrawable(R.drawable.purple_square_button_with_light);
+
+	static Drawable redLightOff = MyApp.context().getResources().getDrawable(R.drawable.red_square_button);
+	static Drawable greenLightOff = MyApp.context().getResources().getDrawable(R.drawable.green_square_button);
+	static Drawable yellowLightOff = MyApp.context().getResources().getDrawable(R.drawable.green_square_button);
+	static Drawable purpleLightOff = MyApp.context().getResources().getDrawable(R.drawable.purple_square_button);
+
+	int soundIdTest=0;
 	int soundIdTest2=0;
 	static boolean baseLinePlaying=false;
 	static int baseLinePlayingIs=0;
@@ -129,13 +144,13 @@ public class Pad extends MultiTouchActivity {
 		buttonEleven.setSoundId(soundIdEleven);
 		final MusicButton buttonTwelve = (MusicButton) findViewById(R.id.padTwelve);
 		buttonTwelve.setSoundId(soundIdTwelve);
-		final MusicButtonLooper buttonThirteen = (MusicButtonLooper) findViewById(R.id.padThirteen);
+		buttonThirteen = (MusicButtonLooper) findViewById(R.id.padThirteen);
 		buttonThirteen.setSoundId(soundIdThirteen);
-		final MusicButtonLooper buttonFourteen = (MusicButtonLooper) findViewById(R.id.padFourteen);
+		buttonFourteen = (MusicButtonLooper) findViewById(R.id.padFourteen);
 		buttonFourteen.setSoundId(soundIdFourteen);
-		final MusicButtonLooper buttonFifteen = (MusicButtonLooper) findViewById(R.id.padFifteen);
+		buttonFifteen = (MusicButtonLooper) findViewById(R.id.padFifteen);
 		buttonFifteen.setSoundId(soundIdFifteen);
-		final MusicButtonLooper buttonSixteen = (MusicButtonLooper) findViewById(R.id.padSixteen);
+		buttonSixteen = (MusicButtonLooper) findViewById(R.id.padSixteen);
 		buttonSixteen.setSoundId(soundIdSixteen);
 
 		int buttonSize = (int)(width/4);
@@ -208,12 +223,12 @@ public class Pad extends MultiTouchActivity {
 		buttonSixteen.getLayoutParams().height=buttonSize;
 		buttonSixteen.setButtonNumber(16);
 
-		final Button looper = (Button) findViewById(R.id.looper);
-		looper.setOnClickListener(new View.OnClickListener() {
+		//final Button looper = (Button) findViewById(R.id.looper);
+		/*looper.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
             	loop();
             }
-        });
+        });*/
 	}
 	public void loop()
 	{
@@ -277,10 +292,10 @@ public class Pad extends MultiTouchActivity {
 		//play first sound
 		//play second sound
 		//play third sound
-		//play fourth sound. 
+		//play fourth sound.
 		//loop for One-two-three-four...One-two-three-four...
 		//read from arraylist with timelength for each play.
-		//use TimerObject or getTime to control what time it is at close intervals. 
+		//use TimerObject or getTime to control what time it is at close intervals.
 		//Play sound at apropriate time.
 	}
 	private ArrayList<Long> getTimeIntervalls() {
@@ -309,58 +324,58 @@ public class Pad extends MultiTouchActivity {
 			/*
 			if(soundChosen.equals("Clap"))
 			{
-				soundIdUL = mSoundPoolHelper.load(this, R.raw.claps,2);	
+				soundIdUL = mSoundPoolHelper.load(this, R.raw.claps,2);
 
 			}
 			else if(soundChosen.equals("Cowbell"))
 			{
-				soundIdUL = mSoundPoolHelper.load(this, R.raw.cow_bell,2);	
+				soundIdUL = mSoundPoolHelper.load(this, R.raw.cow_bell,2);
 
 			}
 			else if(soundChosen.equals("Hihat Closed"))
 			{
-				soundIdUL = mSoundPoolHelper.load(this, R.raw.hihat_closed,2);	
+				soundIdUL = mSoundPoolHelper.load(this, R.raw.hihat_closed,2);
 
-			}			
+			}
 			else if(soundChosen.equals("Hihat Open"))
 			{
-				soundIdUL = mSoundPoolHelper.load(this, R.raw.hihat_opn,2);	
-				
+				soundIdUL = mSoundPoolHelper.load(this, R.raw.hihat_opn,2);
+
 			}
 			else if(soundChosen.equals("Kick Drum"))
 			{
-				soundIdUL = mSoundPoolHelper.load(this, R.raw.kick_drum,2);	
-				
+				soundIdUL = mSoundPoolHelper.load(this, R.raw.kick_drum,2);
+
 			}
 			else if(soundChosen.equals("Snare Drum"))
 			{
-				soundIdUL = mSoundPoolHelper.load(this, R.raw.snar_drum,2);	
-				
+				soundIdUL = mSoundPoolHelper.load(this, R.raw.snar_drum,2);
+
 			}
 			else if(soundChosen.equals("Stick Drum"))
 			{
-				soundIdUL = mSoundPoolHelper.load(this, R.raw.stick_drum,2);	
-				
+				soundIdUL = mSoundPoolHelper.load(this, R.raw.stick_drum,2);
+
 			}
 			else if(soundChosen.equals("Piano C"))
 			{
-				soundIdUL = mSoundPoolHelper.load(this, R.raw.c,2);	
-				
+				soundIdUL = mSoundPoolHelper.load(this, R.raw.c,2);
+
 			}
 			else if(soundChosen.equals("Piano D"))
 			{
-				soundIdUL = mSoundPoolHelper.load(this, R.raw.d,2);	
-				
+				soundIdUL = mSoundPoolHelper.load(this, R.raw.d,2);
+
 			}
 			else if(soundChosen.equals("Piano F"))
 			{
-				soundIdUL = mSoundPoolHelper.load(this, R.raw.f,2);	
-				
+				soundIdUL = mSoundPoolHelper.load(this, R.raw.f,2);
+
 			}
 			else if(soundChosen.equals("Piano G"))
 			{
-				soundIdUL = mSoundPoolHelper.load(this, R.raw.g,2);	
-				
+				soundIdUL = mSoundPoolHelper.load(this, R.raw.g,2);
+
 			}
 			else
 			{
@@ -373,58 +388,58 @@ public class Pad extends MultiTouchActivity {
 			/*
 			if(soundChosen.equals("Clap"))
 			{
-				soundIdUR = mSoundPoolHelper.load(this, R.raw.claps,2);	
+				soundIdUR = mSoundPoolHelper.load(this, R.raw.claps,2);
 
 			}
 			else if(soundChosen.equals("Cowbell"))
 			{
-				soundIdUR = mSoundPoolHelper.load(this, R.raw.cow_bell,2);	
+				soundIdUR = mSoundPoolHelper.load(this, R.raw.cow_bell,2);
 
 			}
 			else if(soundChosen.equals("Hihat Closed"))
 			{
-				soundIdUR = mSoundPoolHelper.load(this, R.raw.hihat_closed,2);	
+				soundIdUR = mSoundPoolHelper.load(this, R.raw.hihat_closed,2);
 
-			}			
+			}
 			else if(soundChosen.equals("Hihat Open"))
 			{
-				soundIdUR = mSoundPoolHelper.load(this, R.raw.hihat_opn,2);	
-				
+				soundIdUR = mSoundPoolHelper.load(this, R.raw.hihat_opn,2);
+
 			}
 			else if(soundChosen.equals("Kick Drum"))
 			{
-				soundIdUR = mSoundPoolHelper.load(this, R.raw.kick_drum,2);	
-				
+				soundIdUR = mSoundPoolHelper.load(this, R.raw.kick_drum,2);
+
 			}
 			else if(soundChosen.equals("Snare Drum"))
 			{
-				soundIdUR = mSoundPoolHelper.load(this, R.raw.snar_drum,2);	
-				
+				soundIdUR = mSoundPoolHelper.load(this, R.raw.snar_drum,2);
+
 			}
 			else if(soundChosen.equals("Stick Drum"))
 			{
-				soundIdUR = mSoundPoolHelper.load(this, R.raw.stick_drum,2);	
-				
+				soundIdUR = mSoundPoolHelper.load(this, R.raw.stick_drum,2);
+
 			}
 			else if(soundChosen.equals("Piano C"))
 			{
-				soundIdUR = mSoundPoolHelper.load(this, R.raw.c,2);	
-				
+				soundIdUR = mSoundPoolHelper.load(this, R.raw.c,2);
+
 			}
 			else if(soundChosen.equals("Piano D"))
 			{
-				soundIdUR = mSoundPoolHelper.load(this, R.raw.d,2);	
-				
+				soundIdUR = mSoundPoolHelper.load(this, R.raw.d,2);
+
 			}
 			else if(soundChosen.equals("Piano F"))
 			{
-				soundIdUR = mSoundPoolHelper.load(this, R.raw.f,2);	
-				
+				soundIdUR = mSoundPoolHelper.load(this, R.raw.f,2);
+
 			}
 			else if(soundChosen.equals("Piano G"))
 			{
-				soundIdUR = mSoundPoolHelper.load(this, R.raw.g,2);	
-				
+				soundIdUR = mSoundPoolHelper.load(this, R.raw.g,2);
+
 			}
 			else
 			{
@@ -437,61 +452,61 @@ public class Pad extends MultiTouchActivity {
 			/*
 			if(soundChosen.equals("Clap"))
 			{
-				soundIdLL = mSoundPoolHelper.load(this, R.raw.claps,2);	
+				soundIdLL = mSoundPoolHelper.load(this, R.raw.claps,2);
 
 			}
 			else if(soundChosen.equals("Cowbell"))
 			{
-				soundIdLL = mSoundPoolHelper.load(this, R.raw.cow_bell,2);	
+				soundIdLL = mSoundPoolHelper.load(this, R.raw.cow_bell,2);
 
 			}
 			else if(soundChosen.equals("Hihat Closed"))
 			{
-				soundIdLL = mSoundPoolHelper.load(this, R.raw.hihat_closed,2);	
+				soundIdLL = mSoundPoolHelper.load(this, R.raw.hihat_closed,2);
 
-			}			
+			}
 			else if(soundChosen.equals("Hihat Open"))
 			{
-				soundIdLL = mSoundPoolHelper.load(this, R.raw.hihat_opn,2);	
-				
+				soundIdLL = mSoundPoolHelper.load(this, R.raw.hihat_opn,2);
+
 			}
 			else if(soundChosen.equals("Kick Drum"))
 			{
-				soundIdLL = mSoundPoolHelper.load(this, R.raw.kick_drum,2);	
-				
+				soundIdLL = mSoundPoolHelper.load(this, R.raw.kick_drum,2);
+
 			}
 			else if(soundChosen.equals("Snare Drum"))
 			{
-				soundIdLL = mSoundPoolHelper.load(this, R.raw.snar_drum,2);	
-				
+				soundIdLL = mSoundPoolHelper.load(this, R.raw.snar_drum,2);
+
 			}
 			else if(soundChosen.equals("Stick Drum"))
 			{
-				soundIdLL = mSoundPoolHelper.load(this, R.raw.stick_drum,2);	
-				
+				soundIdLL = mSoundPoolHelper.load(this, R.raw.stick_drum,2);
+
 			}
 			else if(soundChosen.equals("Piano C"))
 			{
-				soundIdLL = mSoundPoolHelper.load(this, R.raw.c,2);	
-				
+				soundIdLL = mSoundPoolHelper.load(this, R.raw.c,2);
+
 			}
 			else if(soundChosen.equals("Piano D"))
 			{
-				soundIdLL = mSoundPoolHelper.load(this, R.raw.d,2);	
-				
+				soundIdLL = mSoundPoolHelper.load(this, R.raw.d,2);
+
 			}
 			else if(soundChosen.equals("Piano F"))
 			{
-				soundIdLL = mSoundPoolHelper.load(this, R.raw.f,2);	
-				
+				soundIdLL = mSoundPoolHelper.load(this, R.raw.f,2);
+
 			}
 			else if(soundChosen.equals("Piano G"))
 			{
-				soundIdLL = mSoundPoolHelper.load(this, R.raw.g,2);	
-				
+				soundIdLL = mSoundPoolHelper.load(this, R.raw.g,2);
+
 			}
 			else
-			{
+			{	break;
 				Log.d("in loadSounds","no sound was recognized as chosen.");
 			}*/
 		}
@@ -501,76 +516,105 @@ public class Pad extends MultiTouchActivity {
 			/*
 			if(soundChosen.equals("Clap"))
 			{
-				soundIdLR = mSoundPoolHelper.load(this, R.raw.claps,2);	
+				soundIdLR = mSoundPoolHelper.load(this, R.raw.claps,2);
 
 			}
 			else if(soundChosen.equals("Cowbell"))
 			{
-				soundIdLR = mSoundPoolHelper.load(this, R.raw.cow_bell,2);	
+				soundIdLR = mSoundPoolHelper.load(this, R.raw.cow_bell,2);
 
 			}
 			else if(soundChosen.equals("Hihat Closed"))
 			{
-				soundIdLR = mSoundPoolHelper.load(this, R.raw.hihat_closed,2);	
+				soundIdLR = mSoundPoolHelper.load(this, R.raw.hihat_closed,2);
 
-			}			
+			}
 			else if(soundChosen.equals("Hihat Open"))
 			{
-				soundIdLR = mSoundPoolHelper.load(this, R.raw.hihat_opn,2);	
-				
+				soundIdLR = mSoundPoolHelper.load(this, R.raw.hihat_opn,2);
+
 			}
 			else if(soundChosen.equals("Kick Drum"))
 			{
-				soundIdLR = mSoundPoolHelper.load(this, R.raw.kick_drum,2);	
-				
+				soundIdLR = mSoundPoolHelper.load(this, R.raw.kick_drum,2);
+
 			}
 			else if(soundChosen.equals("Snare Drum"))
 			{
-				soundIdLR = mSoundPoolHelper.load(this, R.raw.snar_drum,2);	
-				
+				soundIdLR = mSoundPoolHelper.load(this, R.raw.snar_drum,2);
+
 			}
 			else if(soundChosen.equals("Stick Drum"))
 			{
-				soundIdLR = mSoundPoolHelper.load(this, R.raw.stick_drum,2);	
-				
+				soundIdLR = mSoundPoolHelper.load(this, R.raw.stick_drum,2);
+
 			}
 			else if(soundChosen.equals("Piano C"))
-			{
-				soundIdLR = mSoundPoolHelper.load(this, R.raw.c,2);	
-				
+			{	break;
+				soundIdLR = mSoundPoolHelper.load(this, R.raw.c,2);
+
 			}
 			else if(soundChosen.equals("Piano D"))
 			{
-				soundIdLR = mSoundPoolHelper.load(this, R.raw.d,2);	
-				
+				soundIdLR = mSoundPoolHelper.load(this, R.raw.d,2);
+
 			}
 			else if(soundChosen.equals("Piano F"))
 			{
-				soundIdLR = mSoundPoolHelper.load(this, R.raw.f,2);	
-				
+				soundIdLR = mSoundPoolHelper.load(this, R.raw.f,2);
+
 			}
 			else if(soundChosen.equals("Piano G"))
 			{
-				soundIdLR = mSoundPoolHelper.load(this, R.raw.g,2);	
-				
+				soundIdLR = mSoundPoolHelper.load(this, R.raw.g,2);
+
 			}
 			else
 			{
 				Log.d("in loadSounds","no sound was recognized as chosen.");
 			}*/
 		}
-			
+
 	}
 	ArrayList<Integer> getSounds()
 	{
 		int soundId1,soundId2,soundId3;
-		soundId1 = mSoundPoolHelper.load(this, R.raw.c,2);	
-		soundId2 = mSoundPoolHelper.load(this, R.raw.f,2);	
-		soundId3 = mSoundPoolHelper.load(this, R.raw.g,2);	
+		soundId1 = mSoundPoolHelper.load(this, R.raw.c,2);
+		soundId2 = mSoundPoolHelper.load(this, R.raw.f,2);
+		soundId3 = mSoundPoolHelper.load(this, R.raw.g,2);
 		ArrayList<Integer> thisWillBeFilled = new ArrayList<Integer>();
 		thisWillBeFilled.add(soundId1);
 		thisWillBeFilled.add(soundId2);
 		thisWillBeFilled.add(soundId3);
 		return thisWillBeFilled;
+	}
+	static boolean turnOnLight(int buttonNumber)
+	{
+		switch (buttonNumber) {
+			case 13:buttonThirteen.setImageDrawable(redLightOn);
+				break;
+			case 14: buttonFourteen.setImageDrawable(greenLightOn);
+				break;
+			case 15: buttonFifteen.setImageDrawable(yellowLightOn);
+				break;
+			case 16: buttonSixteen.setImageDrawable(purpleLightOn);
+
+		}
+
+		return true;
+	}
+	static boolean turnOffLight(int buttonNumber)
+	{
+		switch (buttonNumber)
+		{
+			case 13: buttonThirteen.setImageDrawable(redLightOff);
+				break;
+			case 14: buttonFourteen.setImageDrawable(greenLightOff);
+				break;
+			case 15: buttonFifteen.setImageDrawable(yellowLightOff);
+				break;
+			case 16: buttonSixteen.setImageDrawable(purpleLightOff);
+		}
+		return true;
 	}
 }

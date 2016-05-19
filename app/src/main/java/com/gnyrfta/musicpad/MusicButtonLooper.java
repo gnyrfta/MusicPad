@@ -14,6 +14,7 @@ public class MusicButtonLooper extends ImageButton {
     private int soundToPlay=0;
     private int buttonNumber=0;
     int playingId=0;
+    boolean playing=false;
     public MusicButtonLooper (final Context context, final AttributeSet attrs) {
         super(context, attrs);
 
@@ -25,13 +26,14 @@ public class MusicButtonLooper extends ImageButton {
     public boolean onTouchEvent(final MotionEvent event) {
         Log.v("tag", "I get touched");
         //setText("I recive a MotionEvent");
+        //check playing - if playing - stop. Else do this:
         if (event.getAction() == MotionEvent.ACTION_DOWN) {
             //setText("I can recive Move events outside of my View");
 
+            if(!playing) {
 
-            if(Pad.baseLinePlaying)
-            {
-                Log.d("in baseline", "bla bla"+Pad.baseLinePlayingIs+"");
+                if (Pad.baseLinePlaying) {
+                    Log.d("in baseline", "bla bla" + Pad.baseLinePlayingIs + "");
 
                /* switch(Pad.baseLinePlayingIs)
                 {
@@ -45,19 +47,48 @@ public class MusicButtonLooper extends ImageButton {
                         break;
                     default://do nothing
                 }*/
-                Pad.mSoundPoolHelper.stop(Pad.playingLoopId);
-            }
-            Pad.mSoundPoolHelper.setLoop(true);
-        //    Pad.mSoundPoolHelper.play(soundToPlay);
-            Pad.baseLinePlaying=true;
-            Pad.baseLinePlayingIs=buttonNumber;
-            //Pad.mSoundPoolHelper.play(Pad.soundId
-           // final Handler handler = new Handler();
-            //final int mStreamID=0;
-            //handler.postDelayed(new Runnable() {
-              //  @Override
+                    Pad.mSoundPoolHelper.stop(Pad.playingLoopId);
+                }
+                Pad.mSoundPoolHelper.setLoop(true);
+                //    Pad.mSoundPoolHelper.play(soundToPlay);
+                Pad.baseLinePlaying = true;
+                Pad.baseLinePlayingIs = buttonNumber;
+                //Pad.mSoundPoolHelper.play(Pad.soundId
+                // final Handler handler = new Handler();
+                //final int mStreamID=0;
+                //handler.postDelayed(new Runnable() {
+                //  @Override
                 //public void run() {
-                   Pad.playingLoopId =  Pad.mSoundPoolHelper.play(soundToPlay);
+                Pad.playingLoopId = Pad.mSoundPoolHelper.play(soundToPlay);
+                switch(buttonNumber)
+                {
+                    case 13: Pad.turnOnLight(13);
+
+                    case 14: Pad.turnOnLight(14);
+
+                    case 15: Pad.turnOnLight(15);
+
+                    case 16: Pad.turnOnLight(16);
+
+                }
+                playing = true;
+            }
+            else if(playing)
+            {
+                Pad.mSoundPoolHelper.stop(Pad.playingLoopId);
+                switch(buttonNumber)
+                {
+                    case 13: Pad.turnOffLight(13);
+
+                    case 14: Pad.turnOffLight(14);
+
+                    case 15: Pad.turnOffLight(15);
+
+                    case 16: Pad.turnOffLight(16);
+
+                }
+                playing=false;
+            }
                // }}, 350);
         }
         return super.onTouchEvent(event);

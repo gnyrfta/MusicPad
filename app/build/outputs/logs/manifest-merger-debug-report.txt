@@ -53,23 +53,21 @@ MERGED from [com.android.support:support-v4:23.2.0] /home/david/AndroidStudioPro
 		ADDED from /home/david/AndroidStudioProjects/MusicPad/app/src/main/AndroidManifest.xml:13:9-40
 	android:theme
 		ADDED from /home/david/AndroidStudioProjects/MusicPad/app/src/main/AndroidManifest.xml:15:9-40
-activity#com.gnyrfta.musicpad.MainActivity
-ADDED from /home/david/AndroidStudioProjects/MusicPad/app/src/main/AndroidManifest.xml:16:9-24:20
-	android:label
-		ADDED from /home/david/AndroidStudioProjects/MusicPad/app/src/main/AndroidManifest.xml:18:13-45
 	android:name
-		ADDED from /home/david/AndroidStudioProjects/MusicPad/app/src/main/AndroidManifest.xml:17:13-41
-intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from /home/david/AndroidStudioProjects/MusicPad/app/src/main/AndroidManifest.xml:19:13-23:29
-action#android.intent.action.MAIN
-ADDED from /home/david/AndroidStudioProjects/MusicPad/app/src/main/AndroidManifest.xml:20:17-69
-	android:name
-		ADDED from /home/david/AndroidStudioProjects/MusicPad/app/src/main/AndroidManifest.xml:20:25-66
-category#android.intent.category.LAUNCHER
-ADDED from /home/david/AndroidStudioProjects/MusicPad/app/src/main/AndroidManifest.xml:22:17-77
-	android:name
-		ADDED from /home/david/AndroidStudioProjects/MusicPad/app/src/main/AndroidManifest.xml:22:27-74
+		ADDED from /home/david/AndroidStudioProjects/MusicPad/app/src/main/AndroidManifest.xml:16:9-50
 activity#com.gnyrfta.musicpad.Pad
-ADDED from /home/david/AndroidStudioProjects/MusicPad/app/src/main/AndroidManifest.xml:25:9-26:20
+ADDED from /home/david/AndroidStudioProjects/MusicPad/app/src/main/AndroidManifest.xml:17:9-25:20
+	android:label
+		ADDED from /home/david/AndroidStudioProjects/MusicPad/app/src/main/AndroidManifest.xml:19:13-45
 	android:name
-		ADDED from /home/david/AndroidStudioProjects/MusicPad/app/src/main/AndroidManifest.xml:25:19-37
+		ADDED from /home/david/AndroidStudioProjects/MusicPad/app/src/main/AndroidManifest.xml:18:13-32
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from /home/david/AndroidStudioProjects/MusicPad/app/src/main/AndroidManifest.xml:20:13-24:29
+action#android.intent.action.MAIN
+ADDED from /home/david/AndroidStudioProjects/MusicPad/app/src/main/AndroidManifest.xml:21:17-69
+	android:name
+		ADDED from /home/david/AndroidStudioProjects/MusicPad/app/src/main/AndroidManifest.xml:21:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /home/david/AndroidStudioProjects/MusicPad/app/src/main/AndroidManifest.xml:23:17-77
+	android:name
+		ADDED from /home/david/AndroidStudioProjects/MusicPad/app/src/main/AndroidManifest.xml:23:27-74
