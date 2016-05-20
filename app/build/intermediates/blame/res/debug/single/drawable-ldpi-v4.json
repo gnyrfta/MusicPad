@@ -4,36 +4,36 @@
         "source": "/home/david/AndroidStudioProjects/MusicPad/app/src/main/res/drawable-ldpi/play.png"
     },
     {
-        "merged": "/home/david/AndroidStudioProjects/MusicPad/app/build/intermediates/res/merged/debug/drawable-ldpi-v4/square_lightblue.png",
-        "source": "/home/david/AndroidStudioProjects/MusicPad/app/src/main/res/drawable-ldpi/square_lightblue.png"
-    },
-    {
         "merged": "/home/david/AndroidStudioProjects/MusicPad/app/build/intermediates/res/merged/debug/drawable-ldpi-v4/green_square_button.png",
         "source": "/home/david/AndroidStudioProjects/MusicPad/app/src/main/res/drawable-ldpi/green_square_button.png"
     },
     {
-        "merged": "/home/david/AndroidStudioProjects/MusicPad/app/build/intermediates/res/merged/debug/drawable-ldpi-v4/abc_ic_ab_back_material.png",
-        "source": "/home/david/AndroidStudioProjects/MusicPad/app/build/generated/res/pngs/debug/drawable-ldpi/abc_ic_ab_back_material.png"
+        "merged": "/home/david/AndroidStudioProjects/MusicPad/app/build/intermediates/res/merged/debug/drawable-ldpi-v4/square_lightblue.png",
+        "source": "/home/david/AndroidStudioProjects/MusicPad/app/src/main/res/drawable-ldpi/square_lightblue.png"
     },
     {
         "merged": "/home/david/AndroidStudioProjects/MusicPad/app/build/intermediates/res/merged/debug/drawable-ldpi-v4/square_purple.png",
         "source": "/home/david/AndroidStudioProjects/MusicPad/app/src/main/res/drawable-ldpi/square_purple.png"
     },
     {
+        "merged": "/home/david/AndroidStudioProjects/MusicPad/app/build/intermediates/res/merged/debug/drawable-ldpi-v4/abc_ic_ab_back_material.png",
+        "source": "/home/david/AndroidStudioProjects/MusicPad/app/build/generated/res/pngs/debug/drawable-ldpi/abc_ic_ab_back_material.png"
+    },
+    {
         "merged": "/home/david/AndroidStudioProjects/MusicPad/app/build/intermediates/res/merged/debug/drawable-ldpi-v4/red_square_button.png",
         "source": "/home/david/AndroidStudioProjects/MusicPad/app/src/main/res/drawable-ldpi/red_square_button.png"
     },
     {
-        "merged": "/home/david/AndroidStudioProjects/MusicPad/app/build/intermediates/res/merged/debug/drawable-ldpi-v4/abc_btn_radio_on_mtrl.png",
-        "source": "/home/david/AndroidStudioProjects/MusicPad/app/build/generated/res/pngs/debug/drawable-ldpi/abc_btn_radio_on_mtrl.png"
+        "merged": "/home/david/AndroidStudioProjects/MusicPad/app/build/intermediates/res/merged/debug/drawable-ldpi-v4/abc_ic_menu_selectall_material.png",
+        "source": "/home/david/AndroidStudioProjects/MusicPad/app/build/generated/res/pngs/debug/drawable-ldpi/abc_ic_menu_selectall_material.png"
     },
     {
         "merged": "/home/david/AndroidStudioProjects/MusicPad/app/build/intermediates/res/merged/debug/drawable-ldpi-v4/abc_ic_menu_cut_material.png",
         "source": "/home/david/AndroidStudioProjects/MusicPad/app/build/generated/res/pngs/debug/drawable-ldpi/abc_ic_menu_cut_material.png"
     },
     {
-        "merged": "/home/david/AndroidStudioProjects/MusicPad/app/build/intermediates/res/merged/debug/drawable-ldpi-v4/abc_ic_menu_selectall_material.png",
-        "source": "/home/david/AndroidStudioProjects/MusicPad/app/build/generated/res/pngs/debug/drawable-ldpi/abc_ic_menu_selectall_material.png"
+        "merged": "/home/david/AndroidStudioProjects/MusicPad/app/build/intermediates/res/merged/debug/drawable-ldpi-v4/abc_btn_radio_on_mtrl.png",
+        "source": "/home/david/AndroidStudioProjects/MusicPad/app/build/generated/res/pngs/debug/drawable-ldpi/abc_btn_radio_on_mtrl.png"
     },
     {
         "merged": "/home/david/AndroidStudioProjects/MusicPad/app/build/intermediates/res/merged/debug/drawable-ldpi-v4/abc_ic_menu_share_material.png",
@@ -56,8 +56,8 @@
         "source": "/home/david/AndroidStudioProjects/MusicPad/app/build/generated/res/pngs/debug/drawable-ldpi/abc_btn_radio_off_mtrl.png"
     },
     {
-        "merged": "/home/david/AndroidStudioProjects/MusicPad/app/build/intermediates/res/merged/debug/drawable-ldpi-v4/abc_ic_menu_copy_material.png",
-        "source": "/home/david/AndroidStudioProjects/MusicPad/app/build/generated/res/pngs/debug/drawable-ldpi/abc_ic_menu_copy_material.png"
+        "merged": "/home/david/AndroidStudioProjects/MusicPad/app/build/intermediates/res/merged/debug/drawable-ldpi-v4/purple_square_button_with_light.png",
+        "source": "/home/david/AndroidStudioProjects/MusicPad/app/src/main/res/drawable-ldpi/purple_square_button_with_light.png"
     },
     {
         "merged": "/home/david/AndroidStudioProjects/MusicPad/app/build/intermediates/res/merged/debug/drawable-ldpi-v4/abc_ic_menu_overflow_material.png",
@@ -70,6 +70,18 @@
     {
         "merged": "/home/david/AndroidStudioProjects/MusicPad/app/build/intermediates/res/merged/debug/drawable-ldpi-v4/abc_ic_clear_material.png",
         "source": "/home/david/AndroidStudioProjects/MusicPad/app/build/generated/res/pngs/debug/drawable-ldpi/abc_ic_clear_material.png"
+    },
+    {
+        "merged": "/home/david/AndroidStudioProjects/MusicPad/app/build/intermediates/res/merged/debug/drawable-ldpi-v4/yellow_square_button_with_light.png",
+        "source": "/home/david/AndroidStudioProjects/MusicPad/app/src/main/res/drawable-ldpi/yellow_square_button_with_light.png"
+    },
+    {
+        "merged": "/home/david/AndroidStudioProjects/MusicPad/app/build/intermediates/res/merged/debug/drawable-ldpi-v4/abc_ic_menu_copy_material.png",
+        "source": "/home/david/AndroidStudioProjects/MusicPad/app/build/generated/res/pngs/debug/drawable-ldpi/abc_ic_menu_copy_material.png"
+    },
+    {
+        "merged": "/home/david/AndroidStudioProjects/MusicPad/app/build/intermediates/res/merged/debug/drawable-ldpi-v4/red_square_button_with_light.png",
+        "source": "/home/david/AndroidStudioProjects/MusicPad/app/src/main/res/drawable-ldpi/red_square_button_with_light.png"
     },
     {
         "merged": "/home/david/AndroidStudioProjects/MusicPad/app/build/intermediates/res/merged/debug/drawable-ldpi-v4/square_lightgreen.png",
@@ -92,16 +104,20 @@
         "source": "/home/david/AndroidStudioProjects/MusicPad/app/src/main/res/drawable-ldpi/purple_square_button.png"
     },
     {
-        "merged": "/home/david/AndroidStudioProjects/MusicPad/app/build/intermediates/res/merged/debug/drawable-ldpi-v4/abc_btn_checkbox_checked_mtrl.png",
-        "source": "/home/david/AndroidStudioProjects/MusicPad/app/build/generated/res/pngs/debug/drawable-ldpi/abc_btn_checkbox_checked_mtrl.png"
-    },
-    {
         "merged": "/home/david/AndroidStudioProjects/MusicPad/app/build/intermediates/res/merged/debug/drawable-ldpi-v4/abc_btn_checkbox_unchecked_mtrl.png",
         "source": "/home/david/AndroidStudioProjects/MusicPad/app/build/generated/res/pngs/debug/drawable-ldpi/abc_btn_checkbox_unchecked_mtrl.png"
     },
     {
+        "merged": "/home/david/AndroidStudioProjects/MusicPad/app/build/intermediates/res/merged/debug/drawable-ldpi-v4/abc_btn_checkbox_checked_mtrl.png",
+        "source": "/home/david/AndroidStudioProjects/MusicPad/app/build/generated/res/pngs/debug/drawable-ldpi/abc_btn_checkbox_checked_mtrl.png"
+    },
+    {
         "merged": "/home/david/AndroidStudioProjects/MusicPad/app/build/intermediates/res/merged/debug/drawable-ldpi-v4/abc_ic_voice_search_api_material.png",
         "source": "/home/david/AndroidStudioProjects/MusicPad/app/build/generated/res/pngs/debug/drawable-ldpi/abc_ic_voice_search_api_material.png"
+    },
+    {
+        "merged": "/home/david/AndroidStudioProjects/MusicPad/app/build/intermediates/res/merged/debug/drawable-ldpi-v4/green_square_button_with_light.png",
+        "source": "/home/david/AndroidStudioProjects/MusicPad/app/src/main/res/drawable-ldpi/green_square_button_with_light.png"
     },
     {
         "merged": "/home/david/AndroidStudioProjects/MusicPad/app/build/intermediates/res/merged/debug/drawable-ldpi-v4/square_black.png",

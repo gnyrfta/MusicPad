@@ -14,6 +14,7 @@ public class MusicButtonLooper extends ImageButton {
     private int soundToPlay=0;
     private int buttonNumber=0;
     int playingId=0;
+    boolean playing=false;
     public MusicButtonLooper (final Context context, final AttributeSet attrs) {
         super(context, attrs);
 
@@ -29,9 +30,10 @@ public class MusicButtonLooper extends ImageButton {
             //setText("I can recive Move events outside of my View");
 
 
-            if(Pad.baseLinePlaying)
-            {
-                Log.d("in baseline", "bla bla"+Pad.baseLinePlayingIs+"");
+           // if(Pad.baseLinePlaying)
+          //  {
+            if(!playing) {
+                Log.d("in baseline", "bla bla" + Pad.baseLinePlayingIs + "");
 
                /* switch(Pad.baseLinePlayingIs)
                 {
@@ -45,19 +47,26 @@ public class MusicButtonLooper extends ImageButton {
                         break;
                     default://do nothing
                 }*/
-                Pad.mSoundPoolHelper.stop(Pad.playingLoopId);
+                //  Pad.mSoundPoolHelper.stop(Pad.playingLoopId);
+                // }
+                Pad.mSoundPoolHelper.setLoop(true);
+               playingId = Pad.mSoundPoolHelper.play(soundToPlay);
+                playing=true;
             }
-            Pad.mSoundPoolHelper.setLoop(true);
-        //    Pad.mSoundPoolHelper.play(soundToPlay);
-            Pad.baseLinePlaying=true;
-            Pad.baseLinePlayingIs=buttonNumber;
+            else if(playing)
+            {
+                playing=false;
+                Pad.mSoundPoolHelper.stop(playingId);
+            }
+           // Pad.baseLinePlaying=true;
+          //  Pad.baseLinePlayingIs=buttonNumber;
             //Pad.mSoundPoolHelper.play(Pad.soundId
            // final Handler handler = new Handler();
             //final int mStreamID=0;
             //handler.postDelayed(new Runnable() {
               //  @Override
                 //public void run() {
-                   Pad.playingLoopId =  Pad.mSoundPoolHelper.play(soundToPlay);
+                  // Pad.playingLoopId =  Pad.mSoundPoolHelper.play(soundToPlay);
                // }}, 350);
         }
         return super.onTouchEvent(event);
