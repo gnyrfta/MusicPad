@@ -1648,15 +1648,15 @@ containing a value of this type.
         public static final int action_mode_bar=0x7f0d003e;
         public static final int action_mode_bar_stub=0x7f0d003d;
         public static final int action_mode_close_button=0x7f0d0023;
-        public static final int action_settings=0x7f0d007b;
+        public static final int action_settings=0x7f0d007a;
         public static final int activity_chooser_view_content=0x7f0d0024;
         public static final int alertTitle=0x7f0d0030;
         public static final int always=0x7f0d001c;
         public static final int beginning=0x7f0d0019;
-        public static final int button1=0x7f0d0076;
-        public static final int button2=0x7f0d0077;
-        public static final int button3=0x7f0d0078;
-        public static final int button4=0x7f0d0079;
+        public static final int button1=0x7f0d0075;
+        public static final int button2=0x7f0d0076;
+        public static final int button3=0x7f0d0077;
+        public static final int button4=0x7f0d0078;
         public static final int buttonPanel=0x7f0d002b;
         public static final int cancel_action=0x7f0d0057;
         public static final int checkbox=0x7f0d0039;
@@ -1688,7 +1688,6 @@ containing a value of this type.
         public static final int line3=0x7f0d005f;
         public static final int listMode=0x7f0d0009;
         public static final int list_item=0x7f0d0028;
-        public static final int looper=0x7f0d0075;
         public static final int media_actions=0x7f0d0059;
         public static final int middle=0x7f0d001b;
         public static final int multiply=0x7f0d0014;
@@ -1732,7 +1731,7 @@ containing a value of this type.
         public static final int search_plate=0x7f0d0049;
         public static final int search_src_text=0x7f0d004a;
         public static final int search_voice_btn=0x7f0d004e;
-        public static final int seekbar=0x7f0d007a;
+        public static final int seekbar=0x7f0d0079;
         public static final int select_dialog_listview=0x7f0d004f;
         public static final int shortcut=0x7f0d003a;
         public static final int showCustom=0x7f0d000f;

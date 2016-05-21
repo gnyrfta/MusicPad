@@ -50,13 +50,18 @@ public class MusicButtonLooper extends ImageButton {
                 //  Pad.mSoundPoolHelper.stop(Pad.playingLoopId);
                 // }
                 Pad.mSoundPoolHelper.setLoop(true);
+
                playingId = Pad.mSoundPoolHelper.play(soundToPlay);
+                Pad.turnLightOn(buttonNumber);
                 playing=true;
             }
             else if(playing)
             {
-                playing=false;
                 Pad.mSoundPoolHelper.stop(playingId);
+           //     Pad.mSoundPoolHelper.unload(playingId);
+                Pad.turnLightOff(buttonNumber);
+                playing=false;
+
             }
            // Pad.baseLinePlaying=true;
           //  Pad.baseLinePlayingIs=buttonNumber;

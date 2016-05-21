@@ -483,15 +483,15 @@ int id action_menu_presenter 0x7f0d0003
 int id action_mode_bar 0x7f0d003e
 int id action_mode_bar_stub 0x7f0d003d
 int id action_mode_close_button 0x7f0d0023
-int id action_settings 0x7f0d007b
+int id action_settings 0x7f0d007a
 int id activity_chooser_view_content 0x7f0d0024
 int id alertTitle 0x7f0d0030
 int id always 0x7f0d001c
 int id beginning 0x7f0d0019
-int id button1 0x7f0d0076
-int id button2 0x7f0d0077
-int id button3 0x7f0d0078
-int id button4 0x7f0d0079
+int id button1 0x7f0d0075
+int id button2 0x7f0d0076
+int id button3 0x7f0d0077
+int id button4 0x7f0d0078
 int id buttonPanel 0x7f0d002b
 int id cancel_action 0x7f0d0057
 int id checkbox 0x7f0d0039
@@ -523,7 +523,6 @@ int id line1 0x7f0d005b
 int id line3 0x7f0d005f
 int id listMode 0x7f0d0009
 int id list_item 0x7f0d0028
-int id looper 0x7f0d0075
 int id media_actions 0x7f0d0059
 int id middle 0x7f0d001b
 int id multiply 0x7f0d0014
@@ -567,7 +566,7 @@ int id search_mag_icon 0x7f0d0048
 int id search_plate 0x7f0d0049
 int id search_src_text 0x7f0d004a
 int id search_voice_btn 0x7f0d004e
-int id seekbar 0x7f0d007a
+int id seekbar 0x7f0d0079
 int id select_dialog_listview 0x7f0d004f
 int id shortcut 0x7f0d003a
 int id showCustom 0x7f0d000f

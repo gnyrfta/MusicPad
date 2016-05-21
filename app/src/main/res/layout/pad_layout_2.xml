@@ -11,7 +11,7 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_weight="1" >
-    <com.gnyrfta.musicpad.MusicButton
+    <com.gnyrfta.musicpad.MusicButtonLooper
     android:id="@+id/padOne"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
@@ -20,7 +20,7 @@
     android:src="@drawable/green_square_button"
     android:background="@android:color/transparent"
     android:layout_weight="1"/>
-    <com.gnyrfta.musicpad.MusicButton
+    <com.gnyrfta.musicpad.MusicButtonLooper
    	android:id="@+id/padTwo"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
@@ -29,7 +29,7 @@
     android:src="@drawable/purple_square_button"
     android:background="@android:color/transparent"
     android:layout_weight="1"/>
-    <com.gnyrfta.musicpad.MusicButton
+    <com.gnyrfta.musicpad.MusicButtonLooper
     android:id="@+id/padThree"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
@@ -39,7 +39,7 @@
     android:background="@android:color/transparent"
     android:layout_weight="1"/>
 
-    <com.gnyrfta.musicpad.MusicButton
+    <com.gnyrfta.musicpad.MusicButtonLooper
     android:id="@+id/padFour"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
@@ -56,7 +56,7 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_weight="1" >
-   <com.gnyrfta.musicpad.MusicButton
+   <com.gnyrfta.musicpad.MusicButtonLooper
    	android:id="@+id/padFive"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
@@ -66,7 +66,7 @@
     android:background="@android:color/transparent"
     android:layout_weight="1"
     />
-    <com.gnyrfta.musicpad.MusicButton
+    <com.gnyrfta.musicpad.MusicButtonLooper
    	android:id="@+id/padSix"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
@@ -75,7 +75,7 @@
     android:src="@drawable/yellow_square_button"
     android:background="@android:color/transparent"
     android:layout_weight="1"/>
-    <com.gnyrfta.musicpad.MusicButton
+    <com.gnyrfta.musicpad.MusicButtonLooper
         android:id="@+id/padSeven"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -84,7 +84,7 @@
         android:src="@drawable/purple_square_button"
         android:background="@android:color/transparent"
         android:layout_weight="1"/>
-    <com.gnyrfta.musicpad.MusicButton
+    <com.gnyrfta.musicpad.MusicButtonLooper
         android:id="@+id/padEight"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -101,7 +101,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="1" >
-        <com.gnyrfta.musicpad.MusicButton
+        <com.gnyrfta.musicpad.MusicButtonLooper
             android:id="@+id/padNine"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -111,7 +111,7 @@
             android:background="@android:color/transparent"
             android:layout_weight="1"
             />
-        <com.gnyrfta.musicpad.MusicButton
+        <com.gnyrfta.musicpad.MusicButtonLooper
             android:id="@+id/padTen"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -120,7 +120,7 @@
             android:src="@drawable/red_square_button"
             android:background="@android:color/transparent"
             android:layout_weight="1"/>
-        <com.gnyrfta.musicpad.MusicButton
+        <com.gnyrfta.musicpad.MusicButtonLooper
             android:id="@+id/padEleven"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -129,7 +129,7 @@
             android:src="@drawable/green_square_button"
             android:background="@android:color/transparent"
             android:layout_weight="1"/>
-        <com.gnyrfta.musicpad.MusicButton
+        <com.gnyrfta.musicpad.MusicButtonLooper
             android:id="@+id/padTwelve"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -185,19 +185,5 @@
             android:layout_weight="1"/>
     </LinearLayout>
 
-        <LinearLayout
-    android:weightSum="2"
-    android:orientation="horizontal"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_weight="1" >
-	<Button
-	    android:id="@+id/looper"	
-	    android:layout_weight="2"
-	    android:layout_width="wrap_content"
-        android:layout_height="wrap_content" 
-	    android:text="looper">
-	    </Button>        
-    </LinearLayout>
 
 </LinearLayout>
