@@ -28,8 +28,11 @@ public class MainActivity extends ActionBarActivity {
 	public static String LRk="";
 	public static String LLk="";
 	
-	public static com.gnyrfta.musicpad.SoundPoolHelper mSoundPoolHelper; 
+	public static com.gnyrfta.musicpad.SoundPoolHelper mSoundPoolHelper;
+	public static com.gnyrfta.musicpad.SoundPoolHelper mSoundPoolHelper2;
+
 	Context context;
+<<<<<<< Updated upstream
 	//public  TestButton buttonUpperLeft;
 	//public TestButtonTwo tb2;
 	
@@ -37,6 +40,9 @@ public class MainActivity extends ActionBarActivity {
 	{
 		packageName = context.getPackageName();
 	}*/
+=======
+
+>>>>>>> Stashed changes
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -53,8 +59,7 @@ public class MainActivity extends ActionBarActivity {
 		spinnerTwo.setAdapter(adapter);
 		spinnerThree.setAdapter(adapter);
 		spinnerFour.setAdapter(adapter);
-		//THis is what I'm working on:
-		
+
 		spinnerOne.setOnItemSelectedListener(new OnItemSelectedListener() {
 		    @Override
 		    public void onItemSelected(AdapterView<?> parent, View selectedItemView, int pos, long id) {

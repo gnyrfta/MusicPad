@@ -56,6 +56,10 @@
         "source": "/home/david/AndroidStudioProjects/MusicPad/app/src/main/res/layout/pad_layout.xml"
     },
     {
+        "merged": "/home/david/AndroidStudioProjects/MusicPad/app/build/intermediates/res/merged/debug/layout/pad_layout_3.xml",
+        "source": "/home/david/AndroidStudioProjects/MusicPad/app/src/main/res/layout/pad_layout_3.xml"
+    },
+    {
         "merged": "/home/david/AndroidStudioProjects/MusicPad/app/build/intermediates/res/merged/debug/layout/abc_screen_toolbar.xml",
         "source": "/home/david/AndroidStudioProjects/MusicPad/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.0/res/layout/abc_screen_toolbar.xml"
     },
