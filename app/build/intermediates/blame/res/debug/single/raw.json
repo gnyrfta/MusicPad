@@ -1,74 +1,66 @@
 [
     {
-        "merged": "/home/david/AndroidStudioProjects/MusicPad/app/build/intermediates/res/merged/debug/raw/hiphopbass4.mp3",
-        "source": "/home/david/AndroidStudioProjects/MusicPad/app/src/main/res/raw/hiphopbass4.mp3"
+        "merged": "/home/david/AndroidStudioProjects/MusicPad/app/build/intermediates/res/merged/debug/raw/chords4.mp3",
+        "source": "/home/david/AndroidStudioProjects/MusicPad/app/src/main/res/raw/chords4.mp3"
     },
     {
-        "merged": "/home/david/AndroidStudioProjects/MusicPad/app/build/intermediates/res/merged/debug/raw/g.mp3",
-        "source": "/home/david/AndroidStudioProjects/MusicPad/app/src/main/res/raw/g.mp3"
+        "merged": "/home/david/AndroidStudioProjects/MusicPad/app/build/intermediates/res/merged/debug/raw/drums4.mp3",
+        "source": "/home/david/AndroidStudioProjects/MusicPad/app/src/main/res/raw/drums4.mp3"
     },
     {
-        "merged": "/home/david/AndroidStudioProjects/MusicPad/app/build/intermediates/res/merged/debug/raw/tone.mp3",
-        "source": "/home/david/AndroidStudioProjects/MusicPad/app/src/main/res/raw/tone.mp3"
+        "merged": "/home/david/AndroidStudioProjects/MusicPad/app/build/intermediates/res/merged/debug/raw/drums2.mp3",
+        "source": "/home/david/AndroidStudioProjects/MusicPad/app/src/main/res/raw/drums2.mp3"
     },
     {
-        "merged": "/home/david/AndroidStudioProjects/MusicPad/app/build/intermediates/res/merged/debug/raw/cow_bell.mp3",
-        "source": "/home/david/AndroidStudioProjects/MusicPad/app/src/main/res/raw/cow_bell.mp3"
+        "merged": "/home/david/AndroidStudioProjects/MusicPad/app/build/intermediates/res/merged/debug/raw/base4.mp3",
+        "source": "/home/david/AndroidStudioProjects/MusicPad/app/src/main/res/raw/base4.mp3"
     },
     {
-        "merged": "/home/david/AndroidStudioProjects/MusicPad/app/build/intermediates/res/merged/debug/raw/f.mp3",
-        "source": "/home/david/AndroidStudioProjects/MusicPad/app/src/main/res/raw/f.mp3"
+        "merged": "/home/david/AndroidStudioProjects/MusicPad/app/build/intermediates/res/merged/debug/raw/base3.mp3",
+        "source": "/home/david/AndroidStudioProjects/MusicPad/app/src/main/res/raw/base3.mp3"
     },
     {
-        "merged": "/home/david/AndroidStudioProjects/MusicPad/app/build/intermediates/res/merged/debug/raw/hihat_closed.mp3",
-        "source": "/home/david/AndroidStudioProjects/MusicPad/app/src/main/res/raw/hihat_closed.mp3"
+        "merged": "/home/david/AndroidStudioProjects/MusicPad/app/build/intermediates/res/merged/debug/raw/space_guitar_lead.mp3",
+        "source": "/home/david/AndroidStudioProjects/MusicPad/app/src/main/res/raw/space_guitar_lead.mp3"
     },
     {
-        "merged": "/home/david/AndroidStudioProjects/MusicPad/app/build/intermediates/res/merged/debug/raw/d.mp3",
-        "source": "/home/david/AndroidStudioProjects/MusicPad/app/src/main/res/raw/d.mp3"
+        "merged": "/home/david/AndroidStudioProjects/MusicPad/app/build/intermediates/res/merged/debug/raw/drums3.mp3",
+        "source": "/home/david/AndroidStudioProjects/MusicPad/app/src/main/res/raw/drums3.mp3"
     },
     {
-        "merged": "/home/david/AndroidStudioProjects/MusicPad/app/build/intermediates/res/merged/debug/raw/kick_drum.mp3",
-        "source": "/home/david/AndroidStudioProjects/MusicPad/app/src/main/res/raw/kick_drum.mp3"
+        "merged": "/home/david/AndroidStudioProjects/MusicPad/app/build/intermediates/res/merged/debug/raw/drums1.mp3",
+        "source": "/home/david/AndroidStudioProjects/MusicPad/app/src/main/res/raw/drums1.mp3"
     },
     {
-        "merged": "/home/david/AndroidStudioProjects/MusicPad/app/build/intermediates/res/merged/debug/raw/cymbal.mp3",
-        "source": "/home/david/AndroidStudioProjects/MusicPad/app/src/main/res/raw/cymbal.mp3"
+        "merged": "/home/david/AndroidStudioProjects/MusicPad/app/build/intermediates/res/merged/debug/raw/base2.mp3",
+        "source": "/home/david/AndroidStudioProjects/MusicPad/app/src/main/res/raw/base2.mp3"
     },
     {
-        "merged": "/home/david/AndroidStudioProjects/MusicPad/app/build/intermediates/res/merged/debug/raw/stick_drum.mp3",
-        "source": "/home/david/AndroidStudioProjects/MusicPad/app/src/main/res/raw/stick_drum.mp3"
+        "merged": "/home/david/AndroidStudioProjects/MusicPad/app/build/intermediates/res/merged/debug/raw/soft_piano.mp3",
+        "source": "/home/david/AndroidStudioProjects/MusicPad/app/src/main/res/raw/soft_piano.mp3"
     },
     {
-        "merged": "/home/david/AndroidStudioProjects/MusicPad/app/build/intermediates/res/merged/debug/raw/hiphopbass10.mp3",
-        "source": "/home/david/AndroidStudioProjects/MusicPad/app/src/main/res/raw/hiphopbass10.mp3"
+        "merged": "/home/david/AndroidStudioProjects/MusicPad/app/build/intermediates/res/merged/debug/raw/chords3.mp3",
+        "source": "/home/david/AndroidStudioProjects/MusicPad/app/src/main/res/raw/chords3.mp3"
     },
     {
-        "merged": "/home/david/AndroidStudioProjects/MusicPad/app/build/intermediates/res/merged/debug/raw/hihat_opn.mp3",
-        "source": "/home/david/AndroidStudioProjects/MusicPad/app/src/main/res/raw/hihat_opn.mp3"
+        "merged": "/home/david/AndroidStudioProjects/MusicPad/app/build/intermediates/res/merged/debug/raw/space_guitar_lead3.mp3",
+        "source": "/home/david/AndroidStudioProjects/MusicPad/app/src/main/res/raw/space_guitar_lead3.mp3"
     },
     {
-        "merged": "/home/david/AndroidStudioProjects/MusicPad/app/build/intermediates/res/merged/debug/raw/claps.mp3",
-        "source": "/home/david/AndroidStudioProjects/MusicPad/app/src/main/res/raw/claps.mp3"
+        "merged": "/home/david/AndroidStudioProjects/MusicPad/app/build/intermediates/res/merged/debug/raw/space_guitar_lead4.mp3",
+        "source": "/home/david/AndroidStudioProjects/MusicPad/app/src/main/res/raw/space_guitar_lead4.mp3"
     },
     {
-        "merged": "/home/david/AndroidStudioProjects/MusicPad/app/build/intermediates/res/merged/debug/raw/c.mp3",
-        "source": "/home/david/AndroidStudioProjects/MusicPad/app/src/main/res/raw/c.mp3"
+        "merged": "/home/david/AndroidStudioProjects/MusicPad/app/build/intermediates/res/merged/debug/raw/chords2.mp3",
+        "source": "/home/david/AndroidStudioProjects/MusicPad/app/src/main/res/raw/chords2.mp3"
     },
     {
-        "merged": "/home/david/AndroidStudioProjects/MusicPad/app/build/intermediates/res/merged/debug/raw/hiphopbass13.mp3",
-        "source": "/home/david/AndroidStudioProjects/MusicPad/app/src/main/res/raw/hiphopbass13.mp3"
+        "merged": "/home/david/AndroidStudioProjects/MusicPad/app/build/intermediates/res/merged/debug/raw/space_guitar_lead2.mp3",
+        "source": "/home/david/AndroidStudioProjects/MusicPad/app/src/main/res/raw/space_guitar_lead2.mp3"
     },
     {
-        "merged": "/home/david/AndroidStudioProjects/MusicPad/app/build/intermediates/res/merged/debug/raw/ahh_relax_female.mp3",
-        "source": "/home/david/AndroidStudioProjects/MusicPad/app/src/main/res/raw/ahh_relax_female.mp3"
-    },
-    {
-        "merged": "/home/david/AndroidStudioProjects/MusicPad/app/build/intermediates/res/merged/debug/raw/snar_drum.mp3",
-        "source": "/home/david/AndroidStudioProjects/MusicPad/app/src/main/res/raw/snar_drum.mp3"
-    },
-    {
-        "merged": "/home/david/AndroidStudioProjects/MusicPad/app/build/intermediates/res/merged/debug/raw/hiphopbass2.mp3",
-        "source": "/home/david/AndroidStudioProjects/MusicPad/app/src/main/res/raw/hiphopbass2.mp3"
+        "merged": "/home/david/AndroidStudioProjects/MusicPad/app/build/intermediates/res/merged/debug/raw/base1.mp3",
+        "source": "/home/david/AndroidStudioProjects/MusicPad/app/src/main/res/raw/base1.mp3"
     }
 ]

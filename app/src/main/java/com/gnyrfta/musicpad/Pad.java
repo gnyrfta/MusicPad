@@ -13,6 +13,21 @@ import de.passsy.multitouch.MultiTouchActivity;
 public class Pad extends MultiTouchActivity {
 	public static com.gnyrfta.musicpad.SoundPoolHelper mSoundPoolHelper;
 
+	public static int layout=3;
+
+	public static String basePlaying="";
+	public static String chordsPlaying="";
+	public static String drumsPlaying="";
+	public static String leadPlaying="";
+	public static int baseId;
+	public static int chordsId;
+	public static int drumsId;
+	public static int leadId;
+	public static int baseNumber=0;
+	public static int chordsNumber=0;
+	public static int drumsNumber=0;
+	public static int leadNumber=0;
+
 	public static int soundIdOne = 0;
 	public static int soundIdTwo = 0;
 	public static int soundIdThree = 0;
@@ -39,22 +54,22 @@ public class Pad extends MultiTouchActivity {
 	private static Drawable redButtonLightOn = MyApp.context().getResources().getDrawable(R.drawable.red_square_button_with_light);
 	private static Drawable redButtonLightOff = MyApp.context().getResources().getDrawable(R.drawable.red_square_button);
 
-	private static MusicButtonLooper buttonOne;
-	private static MusicButtonLooper buttonTwo;
-	private static MusicButtonLooper buttonThree;
-	private static MusicButtonLooper buttonFour;
-	private static MusicButtonLooper buttonFive;
-	private static MusicButtonLooper buttonSix;
-	private static MusicButtonLooper buttonSeven;
-	private static MusicButtonLooper buttonEight;
-	private static MusicButtonLooper buttonNine;
-	private static MusicButtonLooper buttonTen;
-	private static MusicButtonLooper buttonEleven;
-	private static MusicButtonLooper buttonTwelve;
-	private static MusicButtonLooper buttonThirteen;
-	private static MusicButtonLooper buttonFourteen;
-	private static MusicButtonLooper buttonFifteen;
-	private static MusicButtonLooper buttonSixteen;
+	private static LooperBase buttonOne;
+	private static LooperBase buttonTwo;
+	private static LooperBase buttonThree;
+	private static LooperBase buttonFour;
+	private static LooperChords buttonFive;
+	private static LooperChords buttonSix;
+	private static LooperChords buttonSeven;
+	private static LooperChords buttonEight;
+	private static LooperDrums buttonNine;
+	private static LooperDrums buttonTen;
+	private static LooperDrums buttonEleven;
+	private static LooperDrums buttonTwelve;
+	private static LooperLead buttonThirteen;
+	private static LooperLead buttonFourteen;
+	private static LooperLead buttonFifteen;
+	private static LooperLead buttonSixteen;
 
 	int soundIdTest = 0;
 	int soundIdTest2 = 0;
@@ -65,7 +80,7 @@ public class Pad extends MultiTouchActivity {
 	@Override
 	public void onCreate(final Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.pad_layout_2);
+		setContentView(R.layout.pad_layout_3);
 		Display display = getWindowManager().getDefaultDisplay();
 		int width = display.getWidth();
 		int height = display.getHeight();
@@ -97,24 +112,24 @@ public class Pad extends MultiTouchActivity {
 		loadSounds(LowerLeftButton, "LR");
 		loadSounds(LowerRightButton, "LL");
 
-		soundIdTest = mSoundPoolHelper.load(this, R.raw.c, 2);
-		soundIdTest2 = mSoundPoolHelper.load(this, R.raw.f, 2);
-		soundIdOne = mSoundPoolHelper.load(this, R.raw.ahh_relax_female, 2);
-		soundIdTwo = mSoundPoolHelper.load(this, R.raw.claps, 2);
-		soundIdThree = mSoundPoolHelper.load(this, R.raw.hihat_closed, 2);
-		soundIdFour = mSoundPoolHelper.load(this, R.raw.stick_drum, 2);
-		soundIdFive = mSoundPoolHelper.load(this, R.raw.cymbal, 2);
-		soundIdSix = mSoundPoolHelper.load(this, R.raw.hihat_opn, 2);
-		soundIdSeven = mSoundPoolHelper.load(this, R.raw.cymbal, 2);
-		soundIdEight = mSoundPoolHelper.load(this, R.raw.claps, 2);
-		soundIdNine = mSoundPoolHelper.load(this, R.raw.cow_bell, 2);
-		soundIdTen = mSoundPoolHelper.load(this, R.raw.hihat_opn, 2);
-		soundIdEleven = mSoundPoolHelper.load(this, R.raw.kick_drum, 2);
-		soundIdTwelve = mSoundPoolHelper.load(this, R.raw.claps, 2);
-		soundIdThirteen = mSoundPoolHelper.load(this, R.raw.hiphopbass2, 2);
-		soundIdFourteen = mSoundPoolHelper.load(this, R.raw.hiphopbass4, 2);
-		soundIdFifteen = mSoundPoolHelper.load(this, R.raw.hiphopbass13, 2);
-		soundIdSixteen = mSoundPoolHelper.load(this, R.raw.hiphopbass10, 2);
+		soundIdTest = mSoundPoolHelper.load(this, R.raw.base1, 2);
+		soundIdTest2 = mSoundPoolHelper.load(this, R.raw.base1, 2);
+		soundIdOne = mSoundPoolHelper.load(this, R.raw.base1, 2);
+		soundIdTwo = mSoundPoolHelper.load(this, R.raw.base2, 2);
+		soundIdThree = mSoundPoolHelper.load(this, R.raw.base3, 2);
+		soundIdFour = mSoundPoolHelper.load(this, R.raw.base4, 2);
+		soundIdFive = mSoundPoolHelper.load(this, R.raw.soft_piano, 2);
+		soundIdSix = mSoundPoolHelper.load(this, R.raw.chords2, 2);
+		soundIdSeven = mSoundPoolHelper.load(this, R.raw.chords3, 2);
+		soundIdEight = mSoundPoolHelper.load(this, R.raw.chords4, 2);
+		soundIdNine = mSoundPoolHelper.load(this, R.raw.drums1, 2);
+		soundIdTen = mSoundPoolHelper.load(this, R.raw.drums2, 2);
+		soundIdEleven = mSoundPoolHelper.load(this, R.raw.drums3, 2);
+		soundIdTwelve = mSoundPoolHelper.load(this, R.raw.drums4, 2);
+		soundIdThirteen = mSoundPoolHelper.load(this, R.raw.space_guitar_lead, 2);
+		soundIdFourteen = mSoundPoolHelper.load(this, R.raw.space_guitar_lead2, 2);
+		soundIdFifteen = mSoundPoolHelper.load(this, R.raw.space_guitar_lead3, 2);
+		soundIdSixteen = mSoundPoolHelper.load(this, R.raw.space_guitar_lead4, 2);
 
 		//soundIdUL = mSoundPoolHelper.load(this, R.raw.c,2);
 		//soundIdUR = mSoundPoolHelper.load(this,R.raw.d,2);
@@ -122,37 +137,46 @@ public class Pad extends MultiTouchActivity {
 		//soundIdLR = mSoundPoolHelper.load(this, R.raw.g,2);
 
 
-		buttonOne = (MusicButtonLooper) findViewById(R.id.padOne);
+		buttonOne = (LooperBase) findViewById(R.id.padOne);
 		buttonOne.setSoundId(soundIdOne);
-		buttonTwo = (MusicButtonLooper) findViewById(R.id.padTwo);
+		buttonOne.setBaseSound("base1");
+		buttonTwo = (LooperBase) findViewById(R.id.padTwo);
 		buttonTwo.setSoundId(soundIdTwo);
-		buttonThree = (MusicButtonLooper) findViewById(R.id.padThree);
+		buttonTwo.setBaseSound("base2");
+		buttonThree = (LooperBase) findViewById(R.id.padThree);
 		buttonThree.setSoundId(soundIdThree);
-		buttonFour = (MusicButtonLooper) findViewById(R.id.padFour);
+		buttonThree.setBaseSound("base3");
+		buttonFour = (LooperBase) findViewById(R.id.padFour);
 		buttonFour.setSoundId(soundIdFour);
-		buttonFive = (MusicButtonLooper) findViewById(R.id.padFive);
+		buttonFour.setBaseSound("base4");
+		buttonFive = (LooperChords) findViewById(R.id.padFive);
 		buttonFive.setSoundId(soundIdFive);
-		buttonSix = (MusicButtonLooper) findViewById(R.id.padSix);
+		buttonFive.setChordSound("chords1");
+		buttonSix = (LooperChords) findViewById(R.id.padSix);
 		buttonSix.setSoundId(soundIdSix);
-		buttonSeven = (MusicButtonLooper) findViewById(R.id.padSeven);
+		buttonSix.setChordSound("chords2");
+		buttonSeven = (LooperChords) findViewById(R.id.padSeven);
 		buttonSeven.setSoundId(soundIdSeven);
-		buttonEight = (MusicButtonLooper) findViewById(R.id.padEight);
+		buttonSeven.setChordSound("chords3");
+		buttonEight = (LooperChords) findViewById(R.id.padEight);
 		buttonEight.setSoundId(soundIdEight);
-		buttonNine = (MusicButtonLooper) findViewById(R.id.padNine);
+		buttonEight.setChordSound("chords4");
+		buttonNine = (LooperDrums) findViewById(R.id.padNine);
 		buttonNine.setSoundId(soundIdNine);
-		buttonTen = (MusicButtonLooper) findViewById(R.id.padTen);
+		buttonNine.setDrumSound("drums1");
+		buttonTen = (LooperDrums) findViewById(R.id.padTen);
 		buttonTen.setSoundId(soundIdTen);
-		buttonEleven = (MusicButtonLooper) findViewById(R.id.padEleven);
+		buttonEleven = (LooperDrums) findViewById(R.id.padEleven);
 		buttonEleven.setSoundId(soundIdEleven);
-		buttonTwelve = (MusicButtonLooper) findViewById(R.id.padTwelve);
+		buttonTwelve = (LooperDrums) findViewById(R.id.padTwelve);
 		buttonTwelve.setSoundId(soundIdTwelve);
-		buttonThirteen = (MusicButtonLooper) findViewById(R.id.padThirteen);
+		buttonThirteen = (LooperLead) findViewById(R.id.padThirteen);
 		buttonThirteen.setSoundId(soundIdThirteen);
-		buttonFourteen = (MusicButtonLooper) findViewById(R.id.padFourteen);
+		buttonFourteen = (LooperLead) findViewById(R.id.padFourteen);
 		buttonFourteen.setSoundId(soundIdFourteen);
-		buttonFifteen = (MusicButtonLooper) findViewById(R.id.padFifteen);
+		buttonFifteen = (LooperLead) findViewById(R.id.padFifteen);
 		buttonFifteen.setSoundId(soundIdFifteen);
-		buttonSixteen = (MusicButtonLooper) findViewById(R.id.padSixteen);
+		buttonSixteen = (LooperLead) findViewById(R.id.padSixteen);
 		buttonSixteen.setSoundId(soundIdSixteen);
 
 		int buttonSize = (int) (width / 4);
@@ -320,7 +344,7 @@ public class Pad extends MultiTouchActivity {
 	//pads should be in a grid of 4x5 or 5x5:
 	public void loadSounds(String soundChosen, String pad) {
 		if (pad.equals("UL")) {
-			soundIdOne = mSoundPoolHelper.load(this, R.raw.cow_bell, 2);
+			soundIdOne = mSoundPoolHelper.load(this, R.raw.base1, 2);
 			/*
 			if(soundChosen.equals("Clap"))
 			{
@@ -383,7 +407,7 @@ public class Pad extends MultiTouchActivity {
 			}*/
 		}
 		if (pad.equals("UR")) {
-			soundIdTwo = mSoundPoolHelper.load(this, R.raw.claps, 2);
+			soundIdTwo = mSoundPoolHelper.load(this, R.raw.base1, 2);
 			/*
 			if(soundChosen.equals("Clap"))
 			{
@@ -445,7 +469,7 @@ public class Pad extends MultiTouchActivity {
 				Log.d("in loadSounds","no sound was recognized as chosen.");
 			}*/
 		} else if (pad.equals("LL")) {
-			soundIdFive = mSoundPoolHelper.load(this, R.raw.hihat_closed, 2);
+		//	soundIdFive = mSoundPoolHelper.load(this, R.raw.hihat_closed, 2);
 			/*
 			if(soundChosen.equals("Clap"))
 			{
@@ -507,7 +531,7 @@ public class Pad extends MultiTouchActivity {
 				Log.d("in loadSounds","no sound was recognized as chosen.");
 			}*/
 		} else if (pad.equals("LR")) {
-			soundIdSix = mSoundPoolHelper.load(this, R.raw.stick_drum, 2);
+		//	soundIdSix = mSoundPoolHelper.load(this, R.raw.stick_drum, 2);
 			/*
 			if(soundChosen.equals("Clap"))
 			{
@@ -574,9 +598,9 @@ public class Pad extends MultiTouchActivity {
 
 	ArrayList<Integer> getSounds() {
 		int soundId1, soundId2, soundId3;
-		soundId1 = mSoundPoolHelper.load(this, R.raw.c, 2);
-		soundId2 = mSoundPoolHelper.load(this, R.raw.f, 2);
-		soundId3 = mSoundPoolHelper.load(this, R.raw.g, 2);
+		soundId1 = mSoundPoolHelper.load(this, R.raw.base1, 2);
+		soundId2 = mSoundPoolHelper.load(this, R.raw.base1, 2);
+		soundId3 = mSoundPoolHelper.load(this, R.raw.base1, 2);
 		ArrayList<Integer> thisWillBeFilled = new ArrayList<Integer>();
 		thisWillBeFilled.add(soundId1);
 		thisWillBeFilled.add(soundId2);
@@ -585,79 +609,279 @@ public class Pad extends MultiTouchActivity {
 	}
 	public static void turnLightOn(int buttonNumber)
 	{
-		switch (buttonNumber)
+		if(layout==2) {
+			switch (buttonNumber) {
+				case 1:
+					buttonOne.setImageDrawable(greenButtonLightOn);
+					break;
+				case 2:
+					buttonTwo.setImageDrawable(purpleButtonLightOn);
+					break;
+				case 3:
+					buttonThree.setImageDrawable(greenButtonLightOn);
+					break;
+				case 4:
+					buttonFour.setImageDrawable(purpleButtonLightOn);
+					break;
+				case 5:
+					buttonFive.setImageDrawable(redButtonLightOn);
+					break;
+				case 6:
+					buttonSix.setImageDrawable(yellowButtonLightOn);
+					break;
+				case 7:
+					buttonSeven.setImageDrawable(purpleButtonLightOn);
+					break;
+				case 8:
+					buttonEight.setImageDrawable(yellowButtonLightOn);
+					break;
+				case 9:
+					buttonNine.setImageDrawable(yellowButtonLightOn);
+					break;
+				case 10:
+					buttonTen.setImageDrawable(redButtonLightOn);
+					break;
+				case 11:
+					buttonEleven.setImageDrawable(greenButtonLightOn);
+					break;
+				case 12:
+					buttonTwelve.setImageDrawable(redButtonLightOn);
+					break;
+				case 13:
+					buttonThirteen.setImageDrawable(redButtonLightOn);
+					break;
+				case 14:
+					buttonFourteen.setImageDrawable(greenButtonLightOn);
+					break;
+				case 15:
+					buttonFifteen.setImageDrawable(yellowButtonLightOn);
+					break;
+				case 16:
+					buttonSixteen.setImageDrawable(purpleButtonLightOn);
+					break;
+			}
+		}
+		else if(layout==3)
 		{
-			case 1: buttonOne.setImageDrawable(greenButtonLightOn);
-				break;
-			case 2:buttonTwo.setImageDrawable(purpleButtonLightOn);
-				break;
-			case 3:buttonThree.setImageDrawable(greenButtonLightOn);
-				break;
-			case 4:buttonFour.setImageDrawable(purpleButtonLightOn);
-				break;
-			case 5:buttonFive.setImageDrawable(redButtonLightOn);
-				break;
-			case 6:buttonSix.setImageDrawable(yellowButtonLightOn);
-				break;
-			case 7:buttonSeven.setImageDrawable(purpleButtonLightOn);
-				break;
-			case 8: buttonEight.setImageDrawable(yellowButtonLightOn);
-				break;
-			case 9:buttonNine.setImageDrawable(yellowButtonLightOn);
-				break;
-			case 10:buttonTen.setImageDrawable(redButtonLightOn);
-				break;
-			case 11:buttonEleven.setImageDrawable(greenButtonLightOn);
-				break;
-			case 12:buttonTwelve.setImageDrawable(redButtonLightOn);
-				break;
-			case 13: buttonThirteen.setImageDrawable(redButtonLightOn);
-				break;
-			case 14: buttonFourteen.setImageDrawable(greenButtonLightOn);
-				break;
-			case 15:buttonFifteen.setImageDrawable(yellowButtonLightOn);
-				break;
-			case 16: buttonSixteen.setImageDrawable(purpleButtonLightOn);
-				break;
+			switch (buttonNumber) {
+				case 1:
+					buttonOne.setImageDrawable(greenButtonLightOn);
+					break;
+				case 2:
+					buttonTwo.setImageDrawable(greenButtonLightOn);
+					break;
+				case 3:
+					buttonThree.setImageDrawable(greenButtonLightOn);
+					break;
+				case 4:
+					buttonFour.setImageDrawable(greenButtonLightOn);
+					break;
+				case 5:
+					buttonFive.setImageDrawable(yellowButtonLightOn);
+					break;
+				case 6:
+					buttonSix.setImageDrawable(yellowButtonLightOn);
+					break;
+				case 7:
+					buttonSeven.setImageDrawable(yellowButtonLightOn);
+					break;
+				case 8:
+					buttonEight.setImageDrawable(yellowButtonLightOn);
+					break;
+				case 9:
+					buttonNine.setImageDrawable(redButtonLightOn);
+					break;
+				case 10:
+					buttonTen.setImageDrawable(redButtonLightOn);
+					break;
+				case 11:
+					buttonEleven.setImageDrawable(redButtonLightOn);
+					break;
+				case 12:
+					buttonTwelve.setImageDrawable(redButtonLightOn);
+					break;
+				case 13:
+					buttonThirteen.setImageDrawable(purpleButtonLightOn);
+					break;
+				case 14:
+					buttonFourteen.setImageDrawable(purpleButtonLightOn);
+					break;
+				case 15:
+					buttonFifteen.setImageDrawable(purpleButtonLightOn);
+					break;
+				case 16:
+					buttonSixteen.setImageDrawable(purpleButtonLightOn);
+					break;
+			}
 		}
 	}
 	public static void turnLightOff(int buttonNumber)
 	{
-		switch (buttonNumber)
-		{
-			case 1: buttonOne.setImageDrawable(greenButtonLightOff);
-				break;
-			case 2:buttonTwo.setImageDrawable(purpleButtonLightOff);
-				break;
-			case 3:buttonThree.setImageDrawable(greenButtonLightOff);
-				break;
-			case 4:buttonFour.setImageDrawable(purpleButtonLightOff);
-				break;
-			case 5:buttonFive.setImageDrawable(redButtonLightOff);
-				break;
-			case 6:buttonSix.setImageDrawable(yellowButtonLightOff);
-				break;
-			case 7:buttonSeven.setImageDrawable(purpleButtonLightOff);
-				break;
-			case 8: buttonEight.setImageDrawable(yellowButtonLightOff);
-				break;
-			case 9:buttonNine.setImageDrawable(yellowButtonLightOff);
-				break;
-			case 10:buttonTen.setImageDrawable(redButtonLightOff);
-				break;
-			case 11:buttonEleven.setImageDrawable(greenButtonLightOff);
-				break;
-			case 12:buttonTwelve.setImageDrawable(redButtonLightOff);
-				break;
-			case 13: buttonThirteen.setImageDrawable(redButtonLightOff);
-				break;
-			case 14: buttonFourteen.setImageDrawable(greenButtonLightOff);
-				break;
-			case 15:buttonFifteen.setImageDrawable(yellowButtonLightOff);
-				break;
-			case 16: buttonSixteen.setImageDrawable(purpleButtonLightOff);
-				break;
+		if(layout==2) {
+			switch (buttonNumber) {
+				case 1:
+					buttonOne.setImageDrawable(greenButtonLightOff);
+					break;
+				case 2:
+					buttonTwo.setImageDrawable(purpleButtonLightOff);
+					break;
+				case 3:
+					buttonThree.setImageDrawable(greenButtonLightOff);
+					break;
+				case 4:
+					buttonFour.setImageDrawable(purpleButtonLightOff);
+					break;
+				case 5:
+					buttonFive.setImageDrawable(redButtonLightOff);
+					break;
+				case 6:
+					buttonSix.setImageDrawable(yellowButtonLightOff);
+					break;
+				case 7:
+					buttonSeven.setImageDrawable(purpleButtonLightOff);
+					break;
+				case 8:
+					buttonEight.setImageDrawable(yellowButtonLightOff);
+					break;
+				case 9:
+					buttonNine.setImageDrawable(yellowButtonLightOff);
+					break;
+				case 10:
+					buttonTen.setImageDrawable(redButtonLightOff);
+					break;
+				case 11:
+					buttonEleven.setImageDrawable(greenButtonLightOff);
+					break;
+				case 12:
+					buttonTwelve.setImageDrawable(redButtonLightOff);
+					break;
+				case 13:
+					buttonThirteen.setImageDrawable(redButtonLightOff);
+					break;
+				case 14:
+					buttonFourteen.setImageDrawable(greenButtonLightOff);
+					break;
+				case 15:
+					buttonFifteen.setImageDrawable(yellowButtonLightOff);
+					break;
+				case 16:
+					buttonSixteen.setImageDrawable(purpleButtonLightOff);
+					break;
+			}
 		}
+		else if(layout==3)
+		{
+			switch (buttonNumber) {
+				case 1:
+					buttonOne.setImageDrawable(greenButtonLightOff);
+					break;
+				case 2:
+					buttonTwo.setImageDrawable(greenButtonLightOff);
+					break;
+				case 3:
+					buttonThree.setImageDrawable(greenButtonLightOff);
+					break;
+				case 4:
+					buttonFour.setImageDrawable(greenButtonLightOff);
+					break;
+				case 5:
+					buttonFive.setImageDrawable(yellowButtonLightOff);
+					break;
+				case 6:
+					buttonSix.setImageDrawable(yellowButtonLightOff);
+					break;
+				case 7:
+					buttonSeven.setImageDrawable(yellowButtonLightOff);
+					break;
+				case 8:
+					buttonEight.setImageDrawable(yellowButtonLightOff);
+					break;
+				case 9:
+					buttonNine.setImageDrawable(redButtonLightOff);
+					break;
+				case 10:
+					buttonTen.setImageDrawable(redButtonLightOff);
+					break;
+				case 11:
+					buttonEleven.setImageDrawable(redButtonLightOff);
+					break;
+				case 12:
+					buttonTwelve.setImageDrawable(redButtonLightOff);
+					break;
+				case 13:
+					buttonThirteen.setImageDrawable(purpleButtonLightOff);
+					break;
+				case 14:
+					buttonFourteen.setImageDrawable(purpleButtonLightOff);
+					break;
+				case 15:
+					buttonFifteen.setImageDrawable(purpleButtonLightOff);
+					break;
+				case 16:
+					buttonSixteen.setImageDrawable(purpleButtonLightOff);
+					break;
+			}
+		}
+	}
+
+	public static void setBaseLinePlaying(String base,int id,int number)
+	{
+		basePlaying=base;
+		baseId=id;
+		baseNumber=number;
+	}
+	public static int getBaseLinePlayingId()
+	{
+		return baseId;
+	}
+	public static int getBaseLinePlayingNumber()
+	{
+		return baseNumber;
+	}
+
+	public static void setChordsPlaying(String chords,int id,int number)
+	{
+		chordsPlaying=chords;
+		chordsId=id;
+		chordsNumber=number;
+	}
+	public static int getChordsPlayingId()
+	{
+		return chordsId;
+	}
+	public static int getChordsPlayingNumber()
+	{
+		return chordsNumber;
+	}
+
+	public static void setDrumsPlaying(String drums,int id,int number)
+	{
+		drumsPlaying=drums;
+		drumsId=id;
+		drumsNumber=number;
+	}
+	public static int getDrumsPlayingId()
+	{
+		return drumsId;
+	}
+	public static int getDrumsPlayingNumber()
+	{
+		return drumsNumber;
+	}
+
+	public static void setLeadPlaying(String lead,int id,int number)
+	{
+		leadPlaying=lead;
+		leadId=id;
+		leadNumber=number;
+	}
+	public static int getLeadPlayingId()
+	{
+		return leadId;
+	}
+	public static int getLeadPlayingNumber()
+	{
+		return leadNumber;
 	}
 
 

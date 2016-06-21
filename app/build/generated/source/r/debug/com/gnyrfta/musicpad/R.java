@@ -1801,34 +1801,33 @@ containing a value of this type.
         public static final int notification_template_part_time=0x7f030021;
         public static final int pad_layout=0x7f030022;
         public static final int pad_layout_2=0x7f030023;
-        public static final int select_dialog_item_material=0x7f030024;
-        public static final int select_dialog_multichoice_material=0x7f030025;
-        public static final int select_dialog_singlechoice_material=0x7f030026;
-        public static final int support_simple_spinner_dropdown_item=0x7f030027;
-        public static final int test_file=0x7f030028;
+        public static final int pad_layout_3=0x7f030024;
+        public static final int select_dialog_item_material=0x7f030025;
+        public static final int select_dialog_multichoice_material=0x7f030026;
+        public static final int select_dialog_singlechoice_material=0x7f030027;
+        public static final int support_simple_spinner_dropdown_item=0x7f030028;
+        public static final int test_file=0x7f030029;
     }
     public static final class menu {
         public static final int main=0x7f0e0000;
     }
     public static final class raw {
-        public static final int ahh_relax_female=0x7f050000;
-        public static final int c=0x7f050001;
-        public static final int claps=0x7f050002;
-        public static final int cow_bell=0x7f050003;
-        public static final int cymbal=0x7f050004;
-        public static final int d=0x7f050005;
-        public static final int f=0x7f050006;
-        public static final int g=0x7f050007;
-        public static final int hihat_closed=0x7f050008;
-        public static final int hihat_opn=0x7f050009;
-        public static final int hiphopbass10=0x7f05000a;
-        public static final int hiphopbass13=0x7f05000b;
-        public static final int hiphopbass2=0x7f05000c;
-        public static final int hiphopbass4=0x7f05000d;
-        public static final int kick_drum=0x7f05000e;
-        public static final int snar_drum=0x7f05000f;
-        public static final int stick_drum=0x7f050010;
-        public static final int tone=0x7f050011;
+        public static final int base1=0x7f050000;
+        public static final int base2=0x7f050001;
+        public static final int base3=0x7f050002;
+        public static final int base4=0x7f050003;
+        public static final int chords2=0x7f050004;
+        public static final int chords3=0x7f050005;
+        public static final int chords4=0x7f050006;
+        public static final int drums1=0x7f050007;
+        public static final int drums2=0x7f050008;
+        public static final int drums3=0x7f050009;
+        public static final int drums4=0x7f05000a;
+        public static final int soft_piano=0x7f05000b;
+        public static final int space_guitar_lead=0x7f05000c;
+        public static final int space_guitar_lead2=0x7f05000d;
+        public static final int space_guitar_lead3=0x7f05000e;
+        public static final int space_guitar_lead4=0x7f05000f;
     }
     public static final class string {
         public static final int abc_action_bar_home_description=0x7f060000;
